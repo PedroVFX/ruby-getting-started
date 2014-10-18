@@ -5,7 +5,7 @@
 	}
         body {
  
-            background: url("/assets/FUNDO.jpg");
+            background: url("<%= asset_path('FUNDO.jpg') %>");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -14,7 +14,7 @@
         }
         body1 {
             text-align: center;
-            background: url("//home/pvp/demo-canvas-mov2/assets");
+            background: url("<%= asset_path('FUNDO.jpg') %>");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
