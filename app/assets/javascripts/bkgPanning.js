@@ -1,13 +1,7 @@
 window.looping = true;
 // Maneira correcta de declarar global. O IE da barraca com a declaracao "var n=0;".
 window.n = 0;
-window.n1 = 0;
-window.n2 = 0;
-window.n3 = 0;
-window.n4 = 0;
-window.n5 = 0
-window.n7 = 0;
-window.n8 = 0;
+
 
 
 var game = new Game();
@@ -16,13 +10,7 @@ var game = new Game();
 // Mudar velocidade inline (nao lembra ao diabo)
 function startStop() {
 	window.looping = !window.looping;
-	window.n = window.n + 0.5;
-	window.n1 = window.n1 + 0.5/2;
-	window.n2 = window.n2 + 0.75/2;
-	window.n3 = window.n3 + 1.5/2;
-	window.n4 = window.n4 + 1.25/2;
-
-
+	window.n = window.n + 1;
 	if (window.n > 0) {
 		//alert("pp");
 		//animate();
@@ -45,7 +33,7 @@ var image1 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = "<%= asset_path('bird1.png') %>";
+        this.background.src = "<%= asset_path('bird1.jpg') %>";
 
 }
 
@@ -66,7 +54,7 @@ var image3 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = "<%= asset_path('book1.png') %>";
+        this.background.src = "<%= asset_path('book1.jpg') %>";
 
 }
 
@@ -137,7 +125,7 @@ function Drawable() {
         this.init = function(x, y) {
 
 		// Posicao inicial do movimento esq-dir (fora do ecran)
-                this.x_inicial = -500;
+                this.x_inicial = -200;
 		// Posicao do movimento esq-dir: eixo X
                 this.x1 = this.x_inicial;
                 this.x2 = this.x_inicial;
@@ -158,19 +146,19 @@ function Drawable() {
 
 		// Definicao de altura e largura das imagens animadas
 		this.img_alt = 250;
-		this.img_lar = 400;
+		this.img_lar = 250;
         }
 
 	// Velocidade do movimento esq-dir: eixo X (nao pode haver velocidades repetidas)
-        this.speed1 = 0.5 + window.n1;
-        this.speed2 = 0.75 + window.n2;
-        this.speed3 = 1.20 + window.n3;
-        this.speed4 = 1 + window.n4;
+        this.speed1 = 0.5;
+        this.speed2 = 0.75;
+        this.speed3 = 1.5;
+        this.speed4 = 1.25;
 	// Velocidade do movimento dir-esq: eixo X (nao pode haver velocidades repetidas)
-	this.speed_xde1 = 0.5 + window.n1;
-	this.speed_xde2 = 0.75 + window.n2;
-	this.speed_xde3 = 1 + window.n3;
-	this.speed_xde4 = 1.25 + window.n4;
+	this.speed_xde1 = 0.5;
+	this.speed_xde2 = 0.75;
+	this.speed_xde3 = 1.5;
+	this.speed_xde4 = 1.25;
 
  	// Inicializacao para prototype
         this.canvasWidth = 0;
@@ -201,30 +189,68 @@ function Background() {
 			alert("pppppppppppppppppppppppppppppppppppppppppppppppp");
 		};
 
+
+		// Cruzamento de duas imagens
+		if (this.xde4<this.x2 && this.xde4+300>this.x2) { 
+			this.draw_fundoII();
+			this.draw_fundoIIb();
+		}
+		// Cruzamento de duas imagens
+		if (this.xde3<this.x3 && this.xde3+300>this.x3) { 
+			this.draw_fundoIII();
+			this.draw_fundoIIIb();
+		}
+		 
+
 		// Cria e Anima as imagens: A mais recente sobrepoe-se a mais antiga
 		this.draw_fundo(0,0);      // fundo-b-anim.jpg sem movimento
-
-		this.draw_dir2(this.y+17-25); // book2.jpg
-		this.draw_esq2(this.y+17-25); // interior3.jpg
-		this.draw_esq4(this.y+17-25); // book1.jpg
-		this.draw_dir3(this.y+17-25); // bird1.jpg
-
-		this.draw_dir4(this.y+17-25); // interior1.jpg
-		//this.draw_esq2(this.y+17); // interior3.jpg
-		this.draw_esq3(this.y+17-25); // bird2.png
+		this.draw_dir2(this.y+35); // book2.jpg
+		this.draw_dir3(this.y+25); // bird1.jpg
+		this.draw_esq4(this.y+35); // book1.jpg
+		this.draw_dir4(this.y+35); // interior1.jpg
+		this.draw_esq2(this.y+15); // interior3.jpg
+		this.draw_esq3(this.y+25); // bird2.png
 		//this.draw_dir1(this.y+45); // interior2.png
-		this.draw_dir1(this.y+17-25); // interior2.png
-		this.draw_esq1(this.y+17-25); // kapa.png          ***
-
+		this.draw_esq1(this.y+45); // kapa.png          ***
+		this.draw_dir1(this.y+45); // interior2.png
 
         };
 
         // Fundo sem movimento (fundo da animacao)
         this.draw_fundo = function(x,y) {
 		//Faz a imagem que sem movimento: fundo-b-anim.jpg
-		this.context.drawImage(imageBkg.background, x, y-25, 1366, 370);
+		this.context.drawImage(imageBkg.background, x, y, 1366, 375);
 
         };
+
+
+        // Sem movimento (fora da animacao)
+        this.draw_fundoII = function() {
+		//Faz a imagem sem movimento
+		this.context.drawImage(image3.background, 0, 350, 150, 150);
+
+        };
+        // Sem movimento (fora da animacao)
+        this.draw_fundoIIb = function() {
+		this.context.drawImage(image4.background, 150, 350, 150, 150);
+		//Desfaz a imagem que sem movimento
+		//this.context.clearRect(0, 350, 1366, 375);
+
+        };
+        // Sem movimento (fora da animacao)
+        this.draw_fundoIII = function() {
+		//Faz a imagem que sem movimento: fundo-b-anim.jpg
+		this.context.drawImage(image1.background, 300, 350, 150, 150);
+
+        };
+        // Sem movimento (fora da animacao)
+        this.draw_fundoIIIb = function() {
+		this.context.drawImage(image2.background, 450, 350, 150, 150);
+		//Desfaz a imagem que sem movimento
+		//this.context.clearRect(0, 350, 1366, 375);
+        };
+
+
 
 	// **  ESQ-DIR  ********************************************************************************* ANIMACAO: Eixo X
 
