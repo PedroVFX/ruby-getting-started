@@ -17,10 +17,10 @@ var game = new Game();
 function startStop() {
 	window.looping = !window.looping;
 	window.n = window.n + 0.5;
-	window.n1 = window.n1 + 0.5/2;
-	window.n2 = window.n2 + 0.75/2;
-	window.n3 = window.n3 + 1.5/2;
-	window.n4 = window.n4 + 1.25/2;
+	window.n1 = window.n1 + 0.5;
+	window.n2 = window.n2 + 0.75;
+	window.n3 = window.n3 + 1.5;
+	window.n4 = window.n4 + 1.25;
 
 
 	if (window.n > 0) {
@@ -158,7 +158,7 @@ function Drawable() {
 
 		// Definicao de altura e largura das imagens animadas
 		this.img_alt = 250;
-		this.img_lar = 400;
+		this.img_lar = 250;
         }
 
 	// Velocidade do movimento esq-dir: eixo X (nao pode haver velocidades repetidas)
