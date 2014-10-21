@@ -1,13 +1,14 @@
 window.looping = true;
 // Maneira correcta de declarar global. O IE da barraca com a declaracao "var n=0;".
 window.n = 0;
-window.n1 = 0;
-window.n2 = 0;
-window.n3 = 0;
-window.n4 = 0;
-window.n5 = 0
-window.n7 = 0;
-window.n8 = 0;
+window.n1 = 0.5;
+window.n2 = 0.75;
+window.n3 = 1.20;
+window.n4 = 1;
+window.n5 = 0.5;
+window.n6 = 0.75;
+window.n7 = 1;
+window.n8 = 1.25;
 
 
 var game = new Game();
@@ -15,18 +16,19 @@ var game = new Game();
 
 // Mudar velocidade inline (nao lembra ao diabo)
 function startStop() {
+
 	window.looping = !window.looping;
+
 	window.n = window.n + 0.5;
-	window.n1 = window.n1 + 0.5;
-	window.n2 = window.n2 + 0.75;
-	window.n3 = window.n3 + 1.5;
-	window.n4 = window.n4 + 1.25;
 
-
-	if (window.n > 0) {
-		//alert("pp");
-		//animate();
-	};
+	window.n1 += 0.5;
+	window.n2 += 0.75;
+	window.n3 += 1.20;
+	window.n4 += 1;
+	window.n5 += 0.5;
+	window.n6 += 0.75;
+	window.n7 += 1;
+	window.n8 += 1.25;
 }
 
 
@@ -77,9 +79,9 @@ var image4 = new function() {
         
         // Set images src mainBg
         this.background.src = "<%= asset_path('book2.jpg') %>";
-        //this.background.src = "assets/mainBg.png";
 
 }
+
 var image5 = new function() {
         // Define images
         this.empty = null;
@@ -89,6 +91,7 @@ var image5 = new function() {
         this.background.src = "<%= asset_path('interior2.png') %>";
 
 }
+
 var image6 = new function() {
         // Define images
         this.empty = null;
@@ -98,6 +101,7 @@ var image6 = new function() {
         this.background.src = "<%= asset_path('interior1.jpg') %>";
 
 }
+
 var image7 = new function() {
         // Define images
         this.empty = null;
@@ -107,6 +111,7 @@ var image7 = new function() {
         this.background.src = "<%= asset_path('interior3.jpg') %>";
 
 }
+
 var image8 = new function() {
         // Define images
         this.empty = null;
@@ -138,6 +143,7 @@ function Drawable() {
 
 		// Posicao inicial do movimento esq-dir (fora do ecran)
                 this.x_inicial = -500;
+
 		// Posicao do movimento esq-dir: eixo X
                 this.x1 = this.x_inicial;
                 this.x2 = this.x_inicial;
@@ -146,6 +152,7 @@ function Drawable() {
 
 		// Posicao inicial do movimento dir-esq (fora do ecran)
                 this.xde_inicial = 1400;
+
 		// Posicao do movimento dir-esq: eixo X
                 this.xde1 = this.xde_inicial;
                 this.xde2 = this.xde_inicial;
@@ -154,23 +161,12 @@ function Drawable() {
 
 
 		// Posicao das imagens em movimento no eixo Y. apartir do topo
-                this.y = 30;
+                this.y = 22;
 
 		// Definicao de altura e largura das imagens animadas
 		this.img_alt = 250;
-		this.img_lar = 250;
+		this.img_lar = 300;
         }
-
-	// Velocidade do movimento esq-dir: eixo X (nao pode haver velocidades repetidas)
-        this.speed1 = 0.5 + window.n1;
-        this.speed2 = 0.75 + window.n2;
-        this.speed3 = 1.20 + window.n3;
-        this.speed4 = 1 + window.n4;
-	// Velocidade do movimento dir-esq: eixo X (nao pode haver velocidades repetidas)
-	this.speed_xde1 = 0.5 + window.n1;
-	this.speed_xde2 = 0.75 + window.n2;
-	this.speed_xde3 = 1 + window.n3;
-	this.speed_xde4 = 1.25 + window.n4;
 
  	// Inicializacao para prototype
         this.canvasWidth = 0;
@@ -188,33 +184,22 @@ function Drawable() {
  * canvas and creates the illusion of moving by panning the image.
  */
 function Background() {
-
-	// n fora
-	if (window.n >= 2) {
-		alert("O mundo ...");
-	};
-
  
 	// Chama a animacao das imagens, incrementa velocidade com window.n
         this.draw = function() {
-		if (window.n > 33) {
-			alert("pppppppppppppppppppppppppppppppppppppppppppppppp");
-		};
 
 		// Cria e Anima as imagens: A mais recente sobrepoe-se a mais antiga
 		this.draw_fundo(0,0);      // fundo-b-anim.jpg sem movimento
 
-		this.draw_dir2(this.y+17-25); // book2.jpg
-		this.draw_esq2(this.y+17-25); // interior3.jpg
-		this.draw_esq4(this.y+17-25); // book1.jpg
-		this.draw_dir3(this.y+17-25); // bird1.jpg
+		this.draw_dir2(this.y); // book2.jpg
+		this.draw_esq2(this.y); // interior3.jpg
+		this.draw_esq4(this.y); // book1.jpg
+		this.draw_dir3(this.y); // bird1.jpg
 
-		this.draw_dir4(this.y+17-25); // interior1.jpg
-		//this.draw_esq2(this.y+17); // interior3.jpg
-		this.draw_esq3(this.y+17-25); // bird2.png
-		//this.draw_dir1(this.y+45); // interior2.png
-		this.draw_dir1(this.y+17-25); // interior2.png
-		this.draw_esq1(this.y+17-25); // kapa.png          ***
+		this.draw_dir4(this.y); // interior1.jpg
+		this.draw_esq3(this.y); // bird2.png
+		this.draw_dir1(this.y); // interior2.png
+		this.draw_esq1(this.y); // kapa.png          ***
 
 
         };
@@ -233,13 +218,10 @@ function Background() {
 
 		//Faz a imagem que tem movimento: interior2.jpg
 		this.context.drawImage(image5.background, this.x1, y, this.img_lar, this.img_alt);
- 		//this.context.drawImage(image5.background,-this.x1-300,0,1366, 374);
-                // Velocidade
-                this.x1 += this.speed1+window.n;
  
-		//Desfaz a imagem
-		//this.context.clearRect(this.x1-350, y, 350, 350);
-
+                // Velocidade
+                this.x1 += window.n1;
+ 
                 // If the image scrolled off the screen, reset
                 if (this.x1 >= this.canvasWidth) this.x1 = this.x_inicial;
 
@@ -252,7 +234,7 @@ function Background() {
 		this.context.drawImage(image4.background, this.x2, y, this.img_lar, this.img_alt);
 
                 // Velocidade
-                this.x2 += this.speed2+window.n;
+                this.x2 += window.n2;
  
                 if (this.x2 >= this.canvasWidth) this.x2 = this.x_inicial;
 
@@ -265,7 +247,7 @@ function Background() {
 		this.context.drawImage(image1.background, this.x3, y, this.img_lar, this.img_alt);
 
                 // Velocidade
-                this.x3 += this.speed3+window.n;
+                this.x3 += window.n3;
 
                 if (this.x3 >= this.canvasWidth) this.x3 = this.x_inicial;
         };
@@ -278,7 +260,7 @@ function Background() {
 		this.context.drawImage(image6.background, this.x4, y, this.img_lar, this.img_alt);
 
                 // Velocidade
-                this.x4 += this.speed4+window.n;
+                this.x4 += window.n4;
  
                 if (this.x4 >= this.canvasWidth) this.x4 = this.x_inicial;
 
@@ -290,7 +272,7 @@ function Background() {
 	// movimento dir-esq
         this.draw_esq1 = function(y) {
 
-                this.xde1 -= this.speed_xde1+window.n;
+                this.xde1 -= window.n5;
 
 		//Faz a imagem que tem movimento: kapa.png
                 this.context.drawImage(image8.background, this.xde1, y, this.img_lar, this.img_alt);
@@ -303,7 +285,7 @@ function Background() {
 	// movimento dir-esq
         this.draw_esq2 = function(y) {
 
-                this.xde2 -= this.speed_xde2+window.n;
+                this.xde2 -= window.n6;
 
 		//Faz a imagem que tem movimento: interior3.jpg
                 this.context.drawImage(image7.background, this.xde2, y, this.img_lar, this.img_alt);
@@ -314,7 +296,7 @@ function Background() {
 	// movimento dir-esq
         this.draw_esq3 = function(y) {
 
-                this.xde3 -= this.speed_xde3+window.n;
+                this.xde3 -= window.n7;
 
 		//Faz a imagem que tem movimento: Bird2.jpg
                 this.context.drawImage(image2.background, this.xde3, y, this.img_lar, this.img_alt);
@@ -326,7 +308,7 @@ function Background() {
 	// movimento dir-esq
         this.draw_esq4 = function(y) {
 
-                this.xde4 -= this.speed_xde4+window.n;
+                this.xde4 -= window.n8;
 
 		//Faz a imagem que tem movimento: book.jpg
                 this.context.drawImage(image3.background, this.xde4, y, this.img_lar, this.img_alt);
