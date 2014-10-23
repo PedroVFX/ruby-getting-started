@@ -3,7 +3,7 @@
 <body">
 <body onload="init()">
 	<div id="btnStart">
-		<canvas id="background" width="1366px" height="700px">
+		<canvas id="background" width="1366px" height="350px">
 		      Your browser does not support canvas. Please try again with a different browser.
 		</canvas>
 	</div>

@@ -142,7 +142,7 @@ function Drawable() {
         this.init = function(x, y) {
 
 		// Posicao inicial do movimento esq-dir (fora do ecran)
-                this.x_inicial = -500;
+                this.x_inicial = -316;
 
 		// Posicao do movimento esq-dir: eixo X
                 this.x1 = this.x_inicial;
@@ -151,7 +151,7 @@ function Drawable() {
                 this.x4 = this.x_inicial;
 
 		// Posicao inicial do movimento dir-esq (fora do ecran)
-                this.xde_inicial = 1400;
+                this.xde_inicial = 922;
 
 		// Posicao do movimento dir-esq: eixo X
                 this.xde1 = this.xde_inicial;
@@ -161,11 +161,11 @@ function Drawable() {
 
 
 		// Posicao das imagens em movimento no eixo Y. apartir do topo
-                this.y = 22;
+                this.y = 11;
 
 		// Definicao de altura e largura das imagens animadas
-		this.img_alt = 250;
-		this.img_lar = 300;
+		this.img_alt = 212;
+		this.img_lar = 212;
         }
 
  	// Inicializacao para prototype
@@ -191,15 +191,15 @@ function Background() {
 		// Cria e Anima as imagens: A mais recente sobrepoe-se a mais antiga
 		this.draw_fundo(0,0);      // fundo-b-anim.jpg sem movimento
 
-		this.draw_dir2(this.y); // book2.jpg
-		this.draw_esq2(this.y); // interior3.jpg
-		this.draw_esq4(this.y); // book1.jpg
-		this.draw_dir3(this.y); // bird1.jpg
+		this.draw_dir2(this.y-8); // book2.jpg
+		this.draw_esq2(this.y-8); // interior3.jpg
+		this.draw_esq4(this.y-8); // book1.jpg
+		this.draw_dir3(this.y-8); // bird1.jpg
 
-		this.draw_dir4(this.y); // interior1.jpg
-		this.draw_esq3(this.y); // bird2.png
-		this.draw_dir1(this.y); // interior2.png
-		this.draw_esq1(this.y); // kapa.png          ***
+		this.draw_dir4(this.y-8); // interior1.jpg
+		this.draw_esq3(this.y-8); // bird2.png
+		this.draw_dir1(this.y-8); // interior2.png
+		this.draw_esq1(this.y-8); // kapa.png          ***
 
 
         };
@@ -207,7 +207,7 @@ function Background() {
         // Fundo sem movimento (fundo da animacao)
         this.draw_fundo = function(x,y) {
 		//Faz a imagem que sem movimento: fundo-b-anim.jpg
-		this.context.drawImage(imageBkg.background, x, y-25, 1366, 370);
+		this.context.drawImage(imageBkg.background, x, y-25, 900, 700);
 
         };
 
