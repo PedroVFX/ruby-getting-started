@@ -7,7 +7,7 @@
 		</canvas>
 	<div id="btnStart">
 		<div>
-			<iframe id="videos" type="text/html" width="480" height="270" src="http://www.youtube.com/embed/FTWdfEGx3-E"></iframe>
+			<iframe id="video" type="text/html" src="http://www.youtube.com/embed/FTWdfEGx3-E"></iframe>
 		</div>
 
 		<div>
