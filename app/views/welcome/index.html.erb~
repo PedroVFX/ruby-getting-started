@@ -4,12 +4,10 @@
 <body onload="init()">
 	<div id="btnStart">
 		<div>
-			<oembed><iframe id="video" src='http://www.youtube.com/embed/FTWdfEGx3-E?wmode=opaque' frameborder='0' allowfullscreen></iframe></oembed>
+			<oembed><iframe id="video" src='http://www.youtube.com/embed/FTWdfEGx3-E?feature=oembed' frameborder='0' allowfullscreen></iframe></oembed>
 		</div>
 
-		<div>
-			<oembed><iframe id="music" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/168701635&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></	iframe><oembed>
-		</div>
+
 
 
 	</div>
