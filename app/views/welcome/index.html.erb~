@@ -2,6 +2,9 @@
 <head>
 <body">
 <body onload="init()">
+		<canvas id="background" width="900px" height="700px">
+		      Your browser does not support canvas. Please try again with a different browser.
+		</canvas>
 	<div id="btnStart">
 		<div>
 			<iframe id="videos" type="text/html" width="480" height="270" src='http://www.youtube.com/embed/FTWdfEGx3-E'></iframe>
@@ -13,8 +16,6 @@
 
 
 	</div>
-		<canvas id="background" width="900px" height="700px">
-		      Your browser does not support canvas. Please try again with a different browser.
-		</canvas>
+
 </body>
 </html>
