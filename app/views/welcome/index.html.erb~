@@ -4,7 +4,7 @@
 
 
 		<div id="btnStart">
-			<canvas id="background" width="900px" height="299px">
+			<canvas id="background" width="1366px" height="299px">
 			      Your browser does not support canvas. Please try again with a different browser.
 			</canvas>
 		</div>
