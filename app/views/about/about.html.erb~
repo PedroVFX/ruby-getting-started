@@ -16,3 +16,7 @@ O ano de 2004 viu a edição do seu primeiro trabalho discográfico, Terranova, 
 Gravou em 2006 o segundo disco em nome próprio, Subsequências, com Carlos Barretto no contrabaixo, Alexandre Frazão na bateria, e a participação especial de Edu Lobo na voz. Com este projecto apresentou-se no Auditório da Culturgest (Lisboa), no Festival de Jazz do Valado de Frades 2006, e na sala principal do Teatro São Luiz (Lisboa), em 2007.
 Subsequências, agora editado pela chancela ENJA, dá continuidades à parceria entre o Afonso Pais e este ilustre cantautor brasileiro. </p>
 </div>
+
+<div>
+	<%= link_to "Voltar", root_path %><br>
+</div>
