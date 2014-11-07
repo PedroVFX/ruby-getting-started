@@ -3,7 +3,7 @@
 <body onload="init()">
 			<iframe scrolling="no" frameborder="0" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/168701635&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></	iframe>
 
-			<iframe width="100%" height="150" frameborder='0' allowfullscreen='0' src='https://www.youtube.com/embed/FTWdfEGx3-E'></iframe>
+			<iframe id="video" src='https://www.youtube.com/embed/FTWdfEGx3-E' frameborder='0' allowfullscreen='0'></iframe>
 
 
 
