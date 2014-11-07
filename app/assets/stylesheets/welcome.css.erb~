@@ -64,22 +64,28 @@ p {
 	line-height: 24px;
 	}
 
-#music1 { 
-	position:relative;
-	margin-top: 10px;
-	margin-left: 5%;
-	float: left;
-	width:50%;
-	height:15%;
-	}
-
 #musicas { 
 	position:relative;
 	margin-top: 10px;
 	margin-left: 5%;
 	float: left;
 	width:50%;
+	height:50%;
+	}
 
+#music1 { 
+	position:relative;
+	margin-top: 10px;
+	float: left;
+	width:50%;
+	height:15%;
+	}
+
+#music2 { 
+	position:relative;
+	margin-top: 10px;
+	float: left;
+	width:50%;
 	}
 
 
