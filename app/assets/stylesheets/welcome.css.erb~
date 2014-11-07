@@ -94,6 +94,7 @@ p {
 	margin-top: 75px;
 	float: right; 
 	width:25%;
+	height:250px;
 	}
 
 #btnStart{
