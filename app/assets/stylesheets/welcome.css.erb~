@@ -43,9 +43,9 @@ z-index:-2;
 #texto   {
 	position:relative;
 	margin-top: 10px;
-	margin-left: 5%;
+	margin-left: 3%;
 	float: right;
-	width: 30%;
+	width: 32%;
 	line-height: 24px;
 	}
 
@@ -67,18 +67,18 @@ p {
 #musicas { 
 	position:relative;
 	margin-top: 10px;
-	margin-left: 2%;
+	margin-left: 3%;
 	float: left;
-	width:30%;
+	width:32%;
 	height:100%;
 	}
 
 #videos {
 	position:relative;
 	margin-top: 10px;
-	margin-left: 2%;
+	margin-left: 3%;
 	float: right; 
-	width:30%;
+	width:32%;
 	height:100%;
 	}
 
