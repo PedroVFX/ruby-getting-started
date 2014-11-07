@@ -1,29 +1,6 @@
 <html>
 <head>
 <body onload="init()">
-		<div>
-			<%= link_to "About", about_path %><br>
-		</div>
-		<div id="btnStart">
-			<canvas id="background" width="1366px" height="299px">
-			      Your browser does not support canvas. Please try again with a different browser.
-			</canvas>
-		</div>
-
-
-
-
-		<div id="texto">
-			<h3>
-				Afonso Pais apresenta “Terra Concreta”
-			</h3>
-			<p>
-				Dia -- de ---, Afonso Pais apresenta “Terra Concreta”,  um projecto de 11 paisagens sonoras sobre Reservas Naturais - sete portuguesas e uma no Bornéu, sudeste asiático.
- 
-				A estreia ao vivo ao público está agendada para quarta dia -- de ---,  as --- no ------, em Lisboa.
-Este é um projecto de Duos, que nasceu  a partir da ideia do registo de composições fora de um estúdio ou da habitual sala de espectáculo, e em vez disso ter integralmente o meio natural como veículo de inspiração e influência: sem geradores, só instrumentos acústicos, e gravado nas zonas mais remotas dos nossos Parques Naturais. A escolha dos locais ideais recaiu sobre as zonas naturais mais preservadas e com maior biodiversidade, e o registo em disco representa cerca de um ano de incursões no campo, resultando na selecção de temas que melhor representa o momento espontâneo e consequente do meio-envolvente.
-			</p>
-		</div>
 
 
 		<div>
