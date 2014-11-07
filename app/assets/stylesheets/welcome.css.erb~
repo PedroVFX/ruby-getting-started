@@ -77,14 +77,14 @@ p {
 	position:relative;
 	margin-top: 10px;
 	margin-left: 2%;
-	float: center; 
+	float: right; 
 	width:25%;
 	height:100%;
 	}
 
 #about_lk {
 	color:white;
-	font-size: 21px;
+	font-size: 18px;
 	font-family: Cambria, Georgia, serif;
 	}
 
