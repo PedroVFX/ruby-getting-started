@@ -50,8 +50,8 @@ z-index:-2;
 	}
 
 p {
-	color:red;
-	font-size: 11px;
+	color:white;
+	font-size: 15px;
 	font-family: Cambria, Georgia, serif;
 }
 
@@ -67,18 +67,25 @@ p {
 #musicas { 
 	position:relative;
 	margin-top: 10px;
-	margin-left: 5%;
+	margin-left: 2%;
 	float: left;
 	width:35%;
 	height:100%;
 	}
 
-#video {
+#videos {
 	position:relative;
-	margin-top: 75px;
+	margin-top: 10px;
+	margin-left: 2%;
 	float: right; 
 	width:25%;
 	height:100%;
+	}
+
+#about_lk {
+	color:white;
+	font-size: 21px;
+	font-family: Cambria, Georgia, serif;
 	}
 
 #btnStart{

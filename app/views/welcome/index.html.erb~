@@ -1,7 +1,7 @@
 <html>
 <head>
 <body onload="init()">
-		<div>
+		<div id="about_lk">
 			<%= link_to "About", about_path %><br>
 		</div>
 		<div id="btnStart">
@@ -26,9 +26,16 @@ Este é um projecto de Duos, que nasceu  a partir da ideia do registo de compos
 		</div>
 
 
-		<div id="video">
-			<div><iframe width="100%" height="50%" src="https://www.youtube.com/embed/FTWdfEGx3-E" frameborder="0" allowfullscreen></iframe></div>
-			<div><iframe width="100%" height="50%" src="https://www.youtube.com/embed/FTWdfEGx3-E" frameborder="0" allowfullscreen></iframe></div>
+		<div>
+			<div id="video1">
+				<p>JACC Records</p><br>
+				<p>Afonso Pais Trio - Demasiadamente Grande Aqui Para Ser Pequeno No Mundo</p><br>
+				<iframe width="100%" height="30%" src="https://www.youtube.com/embed/FTWdfEGx3-E" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div id="video2">
+				<p> </p>
+				<iframe width="100%" height="30%" src="https://www.youtube.com/embed/FTWdfEGx3-E" frameborder="0" allowfullscreen></iframe>
+			</div>
 		</div>
 
 		<div id="musicas">
