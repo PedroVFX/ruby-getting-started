@@ -51,7 +51,7 @@ z-index:-2;
 
 p {
 	color:white;
-	font-size: 15px;
+	font-size: 13px;
 	font-family: Cambria, Georgia, serif;
 }
 
@@ -81,6 +81,16 @@ p {
 	width:25%;
 	height:100%;
 	}
+
+#video1 {
+	margin-top: 1px;
+	}
+
+#video2 {
+	margin-top: 1px;
+	}
+
+
 
 #about_lk {
 	color:white;
