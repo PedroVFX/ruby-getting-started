@@ -74,7 +74,6 @@ p {
 	}
 
 #music1 { 
-	position:relative;
 	margin-top: 10px;
 	float: left;
 	width:50%;
@@ -82,10 +81,10 @@ p {
 	}
 
 #music2 { 
-	position:relative;
 	margin-top: 10px;
 	float: left;
 	width:50%;
+	height:15%;
 	}
 
 
