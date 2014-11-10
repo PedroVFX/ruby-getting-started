@@ -1,8 +1,9 @@
 <div>
-	<%= link_to ("Voltar", root_path, data: { no_turbolink: true }) %><br>
+	<a data-no-turbolink='true' href="/">Voltar</a>
 </div>
 
 <div id="biografia">
+	<img src="https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-3pc6w/images/avatar.jpg" style="float:left" alt="Afonso Pais" title="afonso pais"/>
 	<p>Afonso Pais, desde muito cedo demonstrou interesse pela música, optando pelo piano como primeiro instrumento. 
 Em 1995 ingressa na escola de Jazz do Hot Clube de Portugal, onde estuda durante três anos. Aí integra a Big Band de alunos e sócios do H.C.P (“Big Villas Band”) e é escolhido como representante da escola no 8º encontro da “International Association of Schools of Jazz”, que teve lugar em Siena, Itália, no ano de 1997. Ainda em 1997 realiza uma digressão com o rapper General D, com quem actua em Maputo, Beira e Quelimane.
 No verão de 1998, a convite de Erik Moseholm, participa, enquanto primeiro representante Português, num projecto então em estreia intitulado E.J.Y.O. (“European Jazz Youth Orchestra”). De dezanove países europeus são convocados os mais talentosos jovens músicos de jazz, como parte de uma Big Band. Com este projecto esteve em digressão por dez países do norte e leste da Europa, estando o registo audio disponível em dois CD, editados pelo selo dinamarquês Dacapo, gravados ao vivo em Estocolmo e Berlim – “The European Jazz Youth Orchestra 1998”, Vol. 1 / 2 – destacando-se como solista. 
@@ -18,5 +19,5 @@ Subsequências, agora editado pela chancela ENJA, dá continuidades à parceria 
 </div>
 
 <div>
-	<%= link_to "Voltar", root_path %><br>
+	<a data-no-turbolink='true' href="/">Voltar</a>
 </div>
