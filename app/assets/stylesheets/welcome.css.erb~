@@ -64,6 +64,13 @@ p {
 	line-height: 24px;
 	}
 
+#biografia img {
+	width: 23%;
+	max-width: 80%;
+	display: block;
+}
+
+
 #musicas { 
 	position:relative;
 	margin-top: 10px;
