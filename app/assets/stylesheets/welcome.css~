@@ -82,14 +82,6 @@ p {
 	height:100%;
 	}
 
-#musica1 {
-	margin-top: 1px;
-	}
-
-#musica2 {
-	margin-top: 1px;
-	}
-
 #videos {
 	position:relative;
 	margin-top: 10px;
@@ -113,16 +105,20 @@ p {
 	color:white;
 	font-size: 18px;
 	font-family: Cambria, Georgia, serif;
+	margin-left: 2px;
+	margin-bottom: 2px;
 	}
 
 #btnStart{
+    margin-left: 2px;
     display:block;
-    width:1265px;
-    height:299px;
+    width:1278px;
+    height:269px;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl
 {
+	color:white;
 	margin-left: 7px;
 	margin-right: 7px;
 }
