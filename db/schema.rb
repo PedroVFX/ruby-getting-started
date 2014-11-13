@@ -11,15 +11,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140707111715) do
+ActiveRecord::Schema.define(version: 20141113021543) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "soundcloud_items", force: true do |t|
+    t.string   "item"
+    t.string   "nome"
+    t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "texto_lancamentos", force: true do |t|
+    t.string   "nome"
+    t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "vimeo_items", force: true do |t|
+    t.string   "item"
+    t.string   "nome"
+    t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "widgets", force: true do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "stock"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "youtube_items", force: true do |t|
+    t.string   "item"
+    t.string   "nome"
+    t.text     "descricao"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

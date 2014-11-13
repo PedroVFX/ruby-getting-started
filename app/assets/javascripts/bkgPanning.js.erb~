@@ -152,7 +152,8 @@ function Drawable() {
                 this.x4 = this.x_inicial;
 
 		// Posicao inicial do movimento dir-esq (fora do ecran)
-                this.xde_inicial = 922;
+                //this.xde_inicial = 922;
+                this.xde_inicial = 1400;
 
 		// Posicao do movimento dir-esq: eixo X
                 this.xde1 = this.xde_inicial;
@@ -208,7 +209,7 @@ function Background() {
         // Fundo sem movimento (fundo da animacao)
         this.draw_fundo = function(x,y) {
 		//Faz a imagem que sem movimento: fundo-b-anim.jpg
-		this.context.drawImage(imageBkg.background, x, y-25, 900, 299);
+		this.context.drawImage(imageBkg.background, x, y-25, 1366, 299);
 
         };
 

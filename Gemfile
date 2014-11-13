@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Twitter Bootstrap for Rails 
+gem 'twitter-bootstrap-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use postgresql as the database for Active Record

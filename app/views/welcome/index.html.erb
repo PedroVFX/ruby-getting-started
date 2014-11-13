@@ -23,6 +23,12 @@
 				A estreia ao vivo ao público está agendada para quarta dia -- de ---,  as --- no ------, em Lisboa.
 Este é um projecto de Duos, que nasceu  a partir da ideia do registo de composições fora de um estúdio ou da habitual sala de espectáculo, e em vez disso ter integralmente o meio natural como veículo de inspiração e influência: sem geradores, só instrumentos acústicos, e gravado nas zonas mais remotas dos nossos Parques Naturais. A escolha dos locais ideais recaiu sobre as zonas naturais mais preservadas e com maior biodiversidade, e o registo em disco representa cerca de um ano de incursões no campo, resultando na selecção de temas que melhor representa o momento espontâneo e consequente do meio-envolvente.
 			</p>
+			<h3>
+				PostGres apresenta:
+			</h3>
+				<% if @texto_lancamento %>
+					<%= render partial: 'texto_lancamento' %>
+				<% end %>
 		</div>
 
 
@@ -35,9 +41,27 @@ Este é um projecto de Duos, que nasceu  a partir da ideia do registo de compos
 				<p>Pode Ser</p>
 				<iframe width="100%" height="30%" src="https://www.youtube.com/embed/FTWdfEGx3-E" frameborder="0" allowfullscreen></iframe>
 			</div>
+			<div>
+				<p>Dados do postgres para youtube</p>
+				<% if @youtube_items %>
+					<%= render partial: 'youtube_items' %>
+				<% end %>
+			</div>
+			<div>
+				<p>Dados do postgres para vimeo</p>
+				<% if @vimeo_items %>
+					<%= render partial: 'vimeo_items' %>
+				<% end %>
+			</div>
 		</div>
 
 		<div id="musicas">
+			<div>
+				<p>Dados do postgres para SoundCloud</p>
+				<% if @soundcloud_items %>
+					<%= render partial: 'soundcloud_items' %>
+				<% end %>
+			</div>
 			<div id="musica1">
 				<p>Afonso Pais Trio - Demasiadamente Grande Aqui Para Ser Pequeno No Mundo</p>
 				<iframe width="100%" height="30%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/8123394&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
@@ -47,6 +71,7 @@ Este é um projecto de Duos, que nasceu  a partir da ideia do registo de compos
 				<p>Afonso Pais & Rita Maria - Love for Sale (live at jazz au Chellah)</p>
 				<iframe width="100%" height="30%" scrolling="no" frameborder="0" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/168701635&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></	iframe>
 			</div>
+
 		</div>
 
 </body>

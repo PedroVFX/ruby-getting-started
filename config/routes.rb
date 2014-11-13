@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :vimeo_items
+
+  resources :texto_lancamentos
+
+  resources :soundcloud_items
+
+  resources :youtube_items
+
   resources :widgets
 
   # The priority is based upon order of creation: first created -> highest priority.
