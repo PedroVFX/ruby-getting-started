@@ -109,8 +109,8 @@ p {
 
 #btnStart{
     display:block;
-    width:1265px;
-    height:299px;
+    width:1275px;
+    height:269px;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl
