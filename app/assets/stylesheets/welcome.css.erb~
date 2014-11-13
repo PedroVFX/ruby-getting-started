@@ -32,7 +32,6 @@ html {
 	position:relative;
 	margin-top: 10px;
 	float: left;
-	width: 100%;
 }
 
 #btn_novo_texto {
