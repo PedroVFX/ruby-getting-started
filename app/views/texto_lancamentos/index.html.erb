@@ -3,20 +3,22 @@
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
 
-<div id="btn_novo_texto">
-	<%= link_to t('.new', :default => t("helpers.links.new")),
-		    new_texto_lancamento_path,
-		    :class => 'btn btn-primary' %>
-</div>
+<div>
+	<div id="btn_novo_texto">
+		<%= link_to t('.new', :default => t("helpers.links.new")),
+			    new_texto_lancamento_path,
+			    :class => 'btn btn-primary' %>
+	</div>
 
-<div id="btn_novo_texto">
-	<%= link_to t('.index', :default => t("helpers.links.index")),
-		    root_path,
-		    :class => 'btn btn-primary' %>
-</div>
+	<div id="btn_novo_texto">
+		<%= link_to t('.index', :default => t("helpers.links.index")),
+			    root_path,
+			    :class => 'btn btn-primary' %>
+	</div>
 
-<div id="btn_novo_texto">          
-	<%= link_to "Inicio", root_path %> 
+	<div id="btn_novo_texto">          
+		<%= link_to "Inicio", root_path %> 
+	</div>
 </div>
 
 <div id="tb_centrar">
