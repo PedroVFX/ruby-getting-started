@@ -48,7 +48,7 @@ var image1 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = "<%= asset_path('bird1.png') %>";
+        this.background.src = '<%=h asset_path("bird1.png") %>';
 
 }
 
@@ -59,7 +59,7 @@ var image2 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = "<%= asset_path('bird2.png') %>";
+        this.background.src = "<%=h asset_path('bird2.png') %>";
 
 }
 
@@ -69,7 +69,7 @@ var image3 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = "<%= asset_path('book1.png') %>";
+        this.background.src = "<%=h asset_path('book1.png') %>";
 
 }
 
@@ -79,7 +79,7 @@ var image4 = new function() {
         this.background = new Image();
         
         // Set images src mainBg
-        this.background.src = "<%= asset_path('book2.jpg') %>";
+        this.background.src = "<%=h asset_path('book2.jpg') %>";
 
 }
 
@@ -89,7 +89,7 @@ var image5 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = "<%= asset_path('interior2.png') %>";
+        this.background.src = "<%=h asset_path('interior2.png') %>";
 
 }
 
@@ -99,7 +99,7 @@ var image6 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = "<%= asset_path('interior1.jpg') %>";
+        this.background.src = "<%=h asset_path('interior1.jpg') %>";
 
 }
 
@@ -109,7 +109,7 @@ var image7 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = "<%= asset_path('interior3.jpg') %>";
+        this.background.src = "<%=h asset_path('interior3.jpg') %>";
 
 }
 
@@ -119,7 +119,7 @@ var image8 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = "<%= asset_path('kapa.png') %>";
+        this.background.src = "<%=h asset_path('kapa.png') %>";
 
 }
 
@@ -130,7 +130,7 @@ var imageBkg = new function() {
         this.background = new Image();
         
         // Set images src mainBg
-        this.background.src = "<%= asset_path('fundo-b-anim.jpg') %>";
+        this.background.src = "<%=h asset_path('fundo-b-anim.jpg') %>";
 
 }
 /**

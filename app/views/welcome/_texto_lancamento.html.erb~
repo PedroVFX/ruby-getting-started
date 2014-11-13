@@ -1,0 +1,5 @@
+<% @texto_lancamento.each do |texto| %>
+    <p><%= texto.nome %></p>
+    <p><%= texto.descricao %></p>
+
+<% end %>
