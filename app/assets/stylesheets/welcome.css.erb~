@@ -20,6 +20,7 @@ html {
 
 
 #tb_centrar {
+	position:relative;
 	float: center;
 	width: 85%;
 	margin-right: 3%;
@@ -31,6 +32,7 @@ html {
 	position:relative;
 	margin-top: 10px;
 	float: left;
+	width: 85%;
 }
 
 #btn_novo_texto {
