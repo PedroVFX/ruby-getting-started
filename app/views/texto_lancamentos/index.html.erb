@@ -1,6 +1,9 @@
 <%- model_class = TextoLancamento -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+	<div id="btn_novo_texto">
+	  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+			<%= link_to "Inicio", root_path %> 
+	</div>
 </div>
 
 <div id="em_linha">
@@ -13,7 +16,6 @@
 			    :class => 'btn btn-primary' %>
 		<%= link_to "Inicio", root_path %> 
 	</div>
-	<br>
 </div>
 
 <div id="tb_centrar">
