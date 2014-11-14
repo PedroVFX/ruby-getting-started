@@ -33,7 +33,7 @@ html {
 	float: left;
 }
 
-#btn_new {
+#btn_margens {
 	position:relative;
 	margin-right: 3%;
 	margin-left: 3%;
