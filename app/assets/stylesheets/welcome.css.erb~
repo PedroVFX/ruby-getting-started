@@ -19,6 +19,13 @@ html {
 }
 
 
+p {
+	color:white;
+	font-size: 14px;
+	font-family: serif, Cambria, Georgia;
+}
+
+
 #tb_centrar {
 	float: left;
 	width: 94%;
@@ -47,13 +54,13 @@ html {
 	float: right;
 	width: 32%;
 	line-height: 24px;
+	background: url("interior3.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+	opacity: 0.1;
 	}
 
-p {
-	color:white;
-	font-size: 14px;
-	font-family: serif, Cambria, Georgia;
-}
 
 #biografia   {
 	position:relative;
@@ -131,4 +138,3 @@ h1, h2, h3, h4, h5, h6
 }
 
 h1+p, h2+p, h3+p, h4+p { margin-top: .2em; }
-
