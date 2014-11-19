@@ -1,7 +1,8 @@
 <% @vimeo_items.each do |video| %>
   <div>
-    <h3><%= video.nome %></h3>
-    <p><%= video.descricao %></p>
+    <h4 style="color:grey"><%= video.nome %></h4>
+    <p style="color:grey"><%= video.descricao %></p>
     <iframe width='100%' height='30%' src='https://player.vimeo.com/video/<%= video.item %>' frameborder='0' allowfullscreen></iframe>
   </div>
+  <h4><br></h4>
 <% end %>

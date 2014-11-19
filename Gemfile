@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-
+gem 'node'
 # Twitter Bootstrap for Rails 
 gem 'twitter-bootstrap-rails'
-
+gem 'bcrypt-ruby', '3.1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use postgresql as the database for Active Record

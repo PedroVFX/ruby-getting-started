@@ -48,7 +48,7 @@ var image1 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = '<%= asset_path("bird1.png") %>';
+        this.background.src = 'https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-3pc6w/images/avatar.jpg';
 
 }
 
@@ -208,7 +208,7 @@ function Background() {
 
         // Fundo sem movimento (fundo da animacao)
         this.draw_fundo = function(x,y) {
-		//Faz a imagem que sem movimento: fundo-b-anim.jpg
+		//Faz a imagem sem movimento: fundo-b-anim.jpg (1366, 299 não podem ser alterados)
 		this.context.drawImage(imageBkg.background, x, y-25, 1366, 299);
 
         };

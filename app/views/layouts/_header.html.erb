@@ -1,0 +1,46 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="containera">
+ <ul class="nav pull-left">
+      <li><%= link_to "About", about_path %></li>
+          <% if signed_in? %>
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Lançamento <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Texto", texto_lancamentos_path %></li>
+                <li><%= link_to "SoundCloud", soundcloud_items_path %></li>
+                <li><%= link_to "Vimeo", vimeo_items_path %></li>
+                <li><%= link_to "Youtube", youtube_items_path %></li>
+              </ul>
+            </li>
+          <% end %>
+ </ul>
+      <nav>
+        <ul class="nav pull-right">
+          <% if signed_in? %>
+	    <% if current_user.admin? %>
+            <li><%= link_to "Users", users_path %></li>
+	    <% end %>
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Account <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Profile", current_user %></li>
+                <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+                <li class="divider"></li>
+                <li>
+                  <%= link_to "Sign out", signout_path, method: "delete" %>
+                </li>
+              </ul>
+            </li>
+          <% else %>
+            <li><%= link_to "Sign in", signin_path %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

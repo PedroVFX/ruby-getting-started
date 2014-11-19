@@ -12,13 +12,13 @@
 			</canvas>
 		</div>
 
-		<div id="bkg_textolanc">
-			<div id="texto">
-					<% if @texto_lancamento %>
-						<%= render partial: 'texto_lancamento' %>
-					<% end %>
-			</div>
+
+		<div id="texto">
+			<% if @texto_lancamento %>
+				<%= render partial: 'texto_lancamento' %>
+			<% end %>
 		</div>
+
 
 		<div id="videos">
 			<div>

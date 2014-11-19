@@ -18,11 +18,17 @@ html {
 	height: 100%;
 }
 
+#texto_titulo {
+	position:relative;
+	background-color: rgba(128,128,128,0.3);
+	width: 100%;
+	height: 65px;
+	float: center;
+}
 
-p {
-	color:white;
-	font-size: 14px;
-	font-family: serif, Cambria, Georgia;
+#musicas_embed {
+	margin-left: 6px;
+	margin-right: 6px;
 }
 
 
@@ -49,18 +55,12 @@ p {
 
 #texto   {
 	position:relative;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-left: 2%;
+	margin-right: 2%;
 	float: right;
-	width: 32%;
-	line-height: 24px;
-	background: url("interior3.jpg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-	opacity: 0.1;
+	width: 30%;
 	}
-
 
 #biografia   {
 	position:relative;
@@ -79,13 +79,12 @@ p {
 	display: block;
 }
 
-
 #musicas { 
 	position:relative;
-	margin-top: 10px;
-	margin-left: 0%;
+	margin-top: 1px;
+	margin-left: 2%;
 	float: left;
-	width:32%;
+	width:31%;
 	height:100%;
 	}
 
@@ -94,7 +93,7 @@ p {
 	margin-top: 10px;
 	margin-left: 2%;
 	float: right; 
-	width:32%;
+	width:31%;
 	height:100%;
 	}
 
@@ -106,18 +105,8 @@ p {
 	margin-top: 1px;
 	}
 
-
-
-#about_lk {
-	color:white;
-	font-size: 18px;
-	font-family: serif;
-	margin-top: 2px;
-	margin-left: 2px;
-	margin-bottom: 2px;
-	}
-
 #btnStart{
+    margin-top: 41px;
     margin-left: 2px;
     display:block;
     width:1278px;

@@ -1,9 +1,10 @@
 <% @soundcloud_items.each do |musicas| %>
   <div>
-    <h3><%= musicas.nome %></h3>
-    <p><%= musicas.descricao %></p>
-    <iframe width='100%' height='166' scrolling='no' frameborder='no' 
+    <h3 style="margin-top:0px"><%= musicas.nome %></h3>
+    <p style="color:grey"><%= musicas.descricao %></p>
+    <iframe id='musicas_embed' width='98%' height='30%' scrolling='no' frameborder='no'
             src='http://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/<%= musicas.item %>&show_artwork=true'>
     </iframe>
+    <h2><br></h2>
   </div>
 <% end %>

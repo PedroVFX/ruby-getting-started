@@ -1,4 +1,9 @@
 <% @texto_lancamento.each do |texto| %>
-    <h3><%= texto.nome %></h3>
-    <strong><p style="color:black"><%= texto.descricao %></p></strong>
+
+	    <h10><br></h10>
+	    <h1><%= texto.nome %></h1>
+	    <h10><br></h10>
+
+	<strong><p style="color:grey"><%= texto.descricao %></p></strong>
+	<h1><br></h1>
 <% end %>
