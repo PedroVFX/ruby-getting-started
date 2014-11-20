@@ -1,4 +1,9 @@
 class TextoLancamentosController < ApplicationController
+  before_action :signed_in_user,
+                only: [:index, :edit, :update, :destroy]
+  before_action :correct_user,   only: [:edit, :update]
+  #Desta maneira so o admin e que remove o(s) texto(s)
+  #before_action :admin_user,     only: :destroy
   before_action :set_texto_lancamento, only: [:show, :edit, :update, :destroy]
 
   # GET /texto_lancamentos
@@ -70,5 +75,15 @@ class TextoLancamentosController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def texto_lancamento_params
       params.require(:texto_lancamento).permit(:nome, :descricao)
+    end
+
+    # Before filters
+    def correct_user
+      @user = User.find(params[:id])
+      redirect_to(root_url) unless current_user?(@user)
+    end
+
+    def admin_user
+      redirect_to(root_url) unless current_user.admin?
     end
 end

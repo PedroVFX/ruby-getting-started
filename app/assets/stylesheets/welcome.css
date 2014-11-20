@@ -18,13 +18,6 @@ html {
 	height: 100%;
 }
 
-#texto_titulo {
-	position:relative;
-	background-color: rgba(128,128,128,0.3);
-	width: 100%;
-	height: 65px;
-	float: center;
-}
 
 #musicas_embed {
 	margin-left: 6px;
@@ -64,11 +57,11 @@ html {
 
 #biografia   {
 	position:relative;
-	margin-top: 5%;
-	margin-left: 5%;
+	margin-top: 82px;
+	margin-right: 10%;
+	margin-left: 10%;
 	float: center;
 	width: 80%;
-	line-height: 24px;
 	}
 
 #biografia img {
