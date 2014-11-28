@@ -17,6 +17,7 @@
 	  <thead>
 	    <tr>
 	      <th><%= model_class.human_attribute_name(:id) %></th>
+	      <th><%= model_class.human_attribute_name(:code_share) %></th>
 	      <th><%= model_class.human_attribute_name(:item) %></th>
 	      <th><%= model_class.human_attribute_name(:nome) %></th>
 	      <th><%= model_class.human_attribute_name(:descricao) %></th>
@@ -28,7 +29,17 @@
 	    <% @vimeo_items.each do |vimeo_item| %>
 	      <tr>
 		<td><%= link_to vimeo_item.id, vimeo_item_path(vimeo_item) %></td>
-		<td><%= vimeo_item.item %></td>
+		<td><%= vimeo_item.code_share %>
+			<% if (vimeo_item.code_share.length!=0) %>
+		    		<%= render 'shared/share_img' %>
+			<% end %>
+		</td>
+
+		<td><%= vimeo_item.item %><br>
+			<% if (vimeo_item.item.length!=0) %>
+			    <iframe width='350px' height='120px' src='https://player.vimeo.com/video/<%= vimeo_item.item %>' frameborder='0' allowfullscreen></iframe>
+			<% end %>
+		</td>
 		<td><%= vimeo_item.nome %></td>
 		<td><%= vimeo_item.descricao %></td>
 		<td><%=l vimeo_item.created_at %></td>

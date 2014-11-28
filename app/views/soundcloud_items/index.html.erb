@@ -17,6 +17,7 @@
 	  <thead>
 	    <tr>
 	      <th><%= model_class.human_attribute_name(:id) %></th>
+	      <th><%= model_class.human_attribute_name(:url_share) %></th>
 	      <th><%= model_class.human_attribute_name(:item) %></th>
 	      <th><%= model_class.human_attribute_name(:nome) %></th>
 	      <th><%= model_class.human_attribute_name(:descricao) %></th>
@@ -28,7 +29,20 @@
 	    <% @soundcloud_items.each do |soundcloud_item| %>
 	      <tr>
 		<td><%= link_to soundcloud_item.id, soundcloud_item_path(soundcloud_item) %></td>
-		<td><%= soundcloud_item.item %></td>
+		<td><%= soundcloud_item.url_share %>
+			<% if (soundcloud_item.url_share.length!=0) %>
+				    <%= render 'shared/share_img' %>
+			<% end %>
+		</td>
+
+		<td><%= soundcloud_item.item %><br>
+			<% if (soundcloud_item.item.length!=0) %>
+				    <iframe width='350px' height='120px' scrolling='no' frameborder='no'
+					    src='http://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/<%= soundcloud_item.item %>&show_artwork=true'>
+				    </iframe>		
+			<% end %>
+		</td>
+
 		<td><%= soundcloud_item.nome %></td>
 		<td><%= soundcloud_item.descricao %></td>
 		<td><%=l soundcloud_item.created_at %></td>

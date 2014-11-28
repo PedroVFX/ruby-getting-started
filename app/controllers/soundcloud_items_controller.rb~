@@ -8,7 +8,7 @@ class SoundcloudItemsController < ApplicationController
   # GET /soundcloud_items
   # GET /soundcloud_items.json
   def index
-    @soundcloud_items = SoundcloudItem.all.order('updated_at DESC')
+    @soundcloud_items = SoundcloudItem.all.order('created_at DESC')
   end
 
   # GET /soundcloud_items/1

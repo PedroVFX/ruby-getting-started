@@ -1,5 +1,6 @@
 <%- model_class = YoutubeItem -%>
 <div class="page-header">
+  <h1><br></h1>
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
 
@@ -27,7 +28,9 @@
 	    <% @youtube_items.each do |youtube_item| %>
 	      <tr>
 		<td><%= link_to youtube_item.id, youtube_item_path(youtube_item) %></td>
-		<td><%= youtube_item.item %></td>
+		<td><%= youtube_item.item %><br>
+		    <iframe width='300px' height='120px' src='http://www.youtube.com/embed/<%= item.item %>' frameborder='0' allowfullscreen></iframe>
+		</td>
 		<td><%= youtube_item.nome %></td>
 		<td><%= youtube_item.descricao %></td>
 		<td><%=l youtube_item.created_at %></td>
@@ -44,4 +47,11 @@
 	    <% end %>
 	  </tbody>
 	</table>
+</div>
+
+<dl class="dl-horizontal">
+</dl>
+
+<div class="form-actions">
+	<a data-no-turbolink='true' class="btn" href="/">Back</a>
 </div>

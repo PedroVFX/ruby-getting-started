@@ -28,7 +28,9 @@
 	    <% @youtube_items.each do |youtube_item| %>
 	      <tr>
 		<td><%= link_to youtube_item.id, youtube_item_path(youtube_item) %></td>
-		<td><%= youtube_item.item %></td>
+		<td><%= youtube_item.item %><br>
+		    <iframe width='300px' height='120px' src='http://www.youtube.com/embed/<%= youtube_item.item %>' frameborder='0' allowfullscreen></iframe>
+		</td>
 		<td><%= youtube_item.nome %></td>
 		<td><%= youtube_item.descricao %></td>
 		<td><%=l youtube_item.created_at %></td>

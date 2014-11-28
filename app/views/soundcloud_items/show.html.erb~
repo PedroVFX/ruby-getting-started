@@ -1,15 +1,19 @@
 <%- model_class = SoundcloudItem -%>
 <div class="page-header">
+  <h1><br></h1>
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
 </div>
 
 <dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:item) %>:</strong></dt>
-  <dd><%= @soundcloud_item.item %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:nome) %>:</strong></dt>
-  <dd><%= @soundcloud_item.nome %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:descricao) %>:</strong></dt>
-  <dd><%= @soundcloud_item.descricao %></dd>
+
+  <dt><strong><%= model_class.human_attribute_name(:item) %></strong></dt>
+  <dd>:  <%= @soundcloud_item.item %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:nome) %></strong></dt>
+  <dd>:  <%= @soundcloud_item.nome %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:url_share) %></strong></dt>
+  <dd>:  <%= @soundcloud_item.url_share %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:descricao) %></strong></dt>
+  <dd>:  <%= @soundcloud_item.descricao %></dd>
 </dl>
 
 <div class="form-actions">

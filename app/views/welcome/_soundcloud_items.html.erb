@@ -1,10 +1,19 @@
-<% @soundcloud_items.each do |musicas| %>
+<% @soundcloud_items.each do |musica| %>
   <div>
-    <h3 style="margin-top:0px"><%= musicas.nome %></h3>
-    <p style="color:grey"><%= musicas.descricao %></p>
-    <iframe id='musicas_embed' width='98%' height='30%' scrolling='no' frameborder='no'
-            src='http://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/<%= musicas.item %>&show_artwork=true'>
-    </iframe>
-    <h2><br></h2>
+	<h3 style="margin-top:0px"><%= musica.nome %></h3>
+
+	<% if (musica.url_share!='') %>
+	    <%= render 'shared/share_item', item_url: musica.url_share, item_src: 'soundcloud' %>
+	<% end %>
+
+	<p style="color:grey"><%= musica.descricao %></p>
+
+	<% if (musica.item!='') %>
+	    <iframe id='musicas_embed' width='98%' height='27%' scrolling='no' frameborder='no'
+		    src='http://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/<%= musica.item %>&show_artwork=true'>
+	    </iframe>
+	<% end %>
+
+	<h2><br></h2>
   </div>
 <% end %>

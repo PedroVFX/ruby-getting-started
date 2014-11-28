@@ -8,7 +8,7 @@ class VimeoItemsController < ApplicationController
   # GET /vimeo_items
   # GET /vimeo_items.json
   def index
-    @vimeo_items = VimeoItem.all.order('updated_at DESC')
+    @vimeo_items = VimeoItem.all
   end
 
   # GET /vimeo_items/1

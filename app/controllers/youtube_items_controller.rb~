@@ -8,7 +8,7 @@ class YoutubeItemsController < ApplicationController
   # GET /youtube_items
   # GET /youtube_items.json
   def index
-    @youtube_items = YoutubeItem.all.order('updated_at DESC')
+    @youtube_items = YoutubeItem.all
   end
 
   # GET /youtube_items/1

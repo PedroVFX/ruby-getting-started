@@ -8,7 +8,7 @@ class TextoLancamentosController < ApplicationController
   # GET /texto_lancamentos
   # GET /texto_lancamentos.json
   def index
-    @texto_lancamentos = TextoLancamento.all.order('updated_at DESC')
+    @texto_lancamentos = TextoLancamento.all
   end
 
   # GET /texto_lancamentos/1

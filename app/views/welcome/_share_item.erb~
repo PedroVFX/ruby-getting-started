@@ -1,0 +1,26 @@
+<% @soundcloud_items.each do |musicas| %>
+  <div>
+    <h3 style="margin-top:0px"><%= musicas.nome %></h3>
+
+    <div style="margin-top:0px" id="share-buttons">
+
+	<%= render partial: 'share_item', musicas.url_share %>
+
+
+	<a style="margin-top:0px" href="http://www.facebook.com/sharer.php?u=https:<%= musicas.url_share %>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+
+	<a href="http://twitter.com/share?url=https://soundcloud.com/yabucky-1/afonso-pais-rita-maria-love-for-sale-live-at-jazz-au-chellah?utm_source=soundcloud&utm_campaign=share&utm_medium=twitter&text=Afonso Pais apresenta&hashtags=soundcloud" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+
+	<a href="https://plus.google.com/share?url=https://soundcloud.com/yabucky-1/afonso-pais-rita-maria-love-for-sale-live-at-jazz-au-chellah" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+
+    </div>
+
+    <p style="color:grey"><%= musicas.descricao %></p>
+
+    <iframe id='musicas_embed' width='98%' height='27%' scrolling='no' frameborder='no'
+            src='http://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/<%= musicas.item %>&show_artwork=true'>
+    </iframe>
+
+    <h2><br></h2>
+  </div>
+<% end %>

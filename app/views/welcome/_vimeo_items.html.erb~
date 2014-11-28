@@ -1,8 +1,13 @@
 <% @vimeo_items.each do |video| %>
   <div>
-    <h4><%= video.nome %></h4>
+    <h3 style="margin-top:0px"><%= video.nome %></h3>
+    <% if (video.code_share!='') %>
+    	<%= render 'shared/share_item', item_url: video.code_share, item_src: 'vimeo' %>
+    <% end %>
     <p style="color:grey"><%= video.descricao %></p>
-    <iframe width='100%' height='30%' src='https://player.vimeo.com/video/<%= video.item %>' frameborder='0' allowfullscreen></iframe>
+    <% if (video.item!='') %>
+	    <iframe id='videos_embed' width='101%' height='235px' src='https://player.vimeo.com/video/<%= video.item %>' frameborder='0' allowfullscreen></iframe>
+    <% end %>
   </div>
   <h4><br></h4>
 <% end %>

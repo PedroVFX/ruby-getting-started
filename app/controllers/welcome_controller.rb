@@ -7,19 +7,19 @@ class WelcomeController < ApplicationController
   end
 
   def youtube_items
-    @youtube_items = YoutubeItem.all
+    @youtube_items = YoutubeItem.all.order('updated_at DESC')
   end
 
   def vimeo_items
-    @vimeo_items = VimeoItem.all
+    @vimeo_items = VimeoItem.all.order('updated_at DESC')
   end
 
   def soundcloud_items
-    @soundcloud_items = SoundcloudItem.all
+    @soundcloud_items = SoundcloudItem.all.order('updated_at DESC')
   end
 
   def texto_lancamento
-    @texto_lancamento = TextoLancamento.all
+    @texto_lancamento = TextoLancamento.all.order('updated_at DESC')
   end
 
 
