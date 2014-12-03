@@ -16,25 +16,25 @@
 	<table class="table table-striped">
 	  <thead>
 	    <tr>
-	      <th><%= model_class.human_attribute_name(:id) %></th>
 	      <th><%= model_class.human_attribute_name(:item) %></th>
 	      <th><%= model_class.human_attribute_name(:nome) %></th>
 	      <th><%= model_class.human_attribute_name(:descricao) %></th>
-	      <th><%= model_class.human_attribute_name(:created_at) %></th>
+	      <th><%= model_class.human_attribute_name(:updated_at) %></th>
 	      <th><%=t '.actions', :default => t("helpers.actions") %></th>
 	    </tr>
 	  </thead>
 	  <tbody>
 	    <% @youtube_items.each do |youtube_item| %>
 	      <tr>
-		<td><%= link_to youtube_item.id, youtube_item_path(youtube_item) %></td>
-		<td><%= youtube_item.item %><br>
-		    <iframe width='300px' height='120px' src='http://www.youtube.com/embed/<%= youtube_item.item %>' frameborder='0' allowfullscreen></iframe>
-		</td>
-		<td><%= youtube_item.nome %></td>
-		<td><%= youtube_item.descricao %></td>
-		<td><%=l youtube_item.created_at %></td>
-		<td>
+		<% if (youtube_item.item.length!=0) %>
+			<td width='30%'><%= link_to youtube_item.item, youtube_item_path(youtube_item), :class => 'btn btn-mini' %><br>
+			    <iframe width='100%' height='120px' src='http://www.youtube.com/embed/<%= youtube_item.item %>' frameborder='0' allowfullscreen></iframe>
+			</td>
+		<% end %>
+		<td width='15%'><%= youtube_item.nome %></td>
+		<td width='30%'><%= youtube_item.descricao %></td>
+		<td width='15%'><%=l youtube_item.updated_at %></td>
+		<td width='5%'>
 		  <%= link_to t('.edit', :default => t("helpers.links.edit")),
 		              edit_youtube_item_path(youtube_item), :class => 'btn btn-mini' %>
 		  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
