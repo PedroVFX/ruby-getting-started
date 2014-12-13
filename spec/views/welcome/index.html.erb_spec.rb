@@ -1,0 +1,35 @@
+require 'rails_helper'
+
+RSpec.describe "welcome/index.html.erb", :type => :view do
+
+  context "It renders" do
+
+    it "the _header.html.erb (menu) template" do	
+      visit root_path
+      expect(view).to render_template(partial: '_header')
+    end
+
+    it "the _texto_lancamento.html.erb template" do	
+      visit root_path
+      expect(view).to render_template(partial: '_texto_lancamento')
+    end
+
+    it "the _soundcloud_items.html.erb template" do	
+      visit root_path
+      expect(view).to render_template(partial: '_soundcloud_items')
+    end
+
+    it "the _vimeo_items.html.erb template" do	
+      visit root_path
+      expect(view).to render_template(partial: '_vimeo_items')
+    end
+
+    it "the _youtube_items.html.erb template" do	
+      visit root_path
+      expect(view).to render_template(partial: '_youtube_items')
+    end
+
+
+  end
+
+end

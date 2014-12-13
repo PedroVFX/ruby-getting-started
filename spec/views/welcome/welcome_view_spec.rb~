@@ -1,0 +1,14 @@
+require 'rails_helper'
+
+RSpec.describe "welcome", :type => :view do
+  render_views
+  context "Make render" do
+
+    it "GET is successful" do
+      render "welcome"
+      expect(response).to be_success
+    end
+
+  end
+
+end

@@ -1,0 +1,9 @@
+require 'spec_helper'
+
+describe ApplicationHelper do
+
+  describe "have_titlesss" do
+    it "should have_titleaaa" do
+    end
+  end
+end
