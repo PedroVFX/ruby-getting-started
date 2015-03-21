@@ -1,0 +1,315 @@
+/* Area de projectos 1 */
+#br_linha {
+    clear: both;
+}
+
+#demo1{position:relative;}
+#demo2{position:relative;}
+
+.foto_area1 {
+  position:relative;
+  width: 200px;
+  height: 180px;
+  background-color:white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0px solid #ccc;
+
+}
+
+/* width e height no coffee */
+.foto_area2 {
+  cursor:pointer;
+  margin-top: 17.5%;
+  position:relative;
+  width: 200px;
+  height: 270px;
+  background-color:white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* ESCONDIDA 400px X 380px */
+.foto_area2e {
+  cursor:pointer;
+  position:relative;
+  width: 40px;
+  height: 38px;
+  background-color:white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  visibility: hidden;
+}
+
+
+#proj_area1 {
+  position: relative;
+  margin-top: 0%;
+  float: center;
+  height: 100%;
+  width: 100%;
+  border: 0px solid black;
+}
+
+
+/* COLUNA 1  AREA 1 */
+#pa1_coluna1 {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 49%;
+  border: 0px solid #ccc;
+}
+
+#foto_area1_1 {
+  cursor:pointer;
+  float: right;
+  margin-right: -1px;
+}
+#foto_area1_2 {
+  float: right;
+  margin-right: -1px;
+}
+#foto_area1_3 {
+  float: right;
+  margin-right: -1px;	
+}
+/* COLUNA 2 AREA 1 */
+#pa1_coluna2 {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 49%;
+  border: 0px solid #ccc;
+}
+#foto_area1_4 {
+  cursor:pointer;
+  float: left;
+  margin-left: -1px;
+}
+#foto_area1_5 {
+  float: left;
+  margin-left: -1px;
+}
+#foto_area1_6 {
+  float: left;
+  margin-left: -1px;
+}
+/* DIVISAO da area 1 para a 2 */
+#proj_div_1 {
+  position: relative;
+  height: 122px;
+  width: 100%;
+  background-color:white;
+  visibility: visible; /* hidden */
+}
+/* AREA 2 */
+#foto_area2_1 {
+  float: right;
+
+}
+/* ECONDIDA */
+#foto_area2_1e {
+  float: left;
+}
+#foto_area2_2 {
+  float: left;
+
+}
+/* ECONDIDA */
+#foto_area2_2e {
+  float: right;
+}
+
+
+/* Para ficar colado no topo de codepen*/
+.logo {font-size:40px; font-weight:bold;color:#00a; font-style:italic;}
+.intro {color:#777; font-style:italic; margin:10px 0;}
+.menu {margin-top: 0px;}
+.content {margin-top:10px;}
+.menu-padding {padding-top:40px;}
+.content {padding:10px;}
+.content p {margin-bottom:20px;}
+.desc_posicao {
+  margin-left: 190px;
+  border: 0px solid #ccc;
+  padding: 10px 10px; color:black; background:white; 
+  height:28px; width:15%;
+  font-size: 18px; 
+  font-weight:bold;
+  visibility: hidden; /* visible V hidden */
+}
+#center_desc {
+  float: center;
+}
+.navbar {
+	margin-bottom: 0;
+	padding: 0;
+	border: 0px solid #ccc;
+
+}
+
+/* Fim colado */
+.nav {
+	width: 100%;
+	float: center;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border-bottom: 0px solid #ccc;  }
+.nav ul {
+	list-style: none;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0; }
+
+.nav li a {
+	display: block;
+	padding: 20px 25px;
+	text-decoration: none;
+	font-weight: bold;
+	color: grey;
+}
+/* Class active tem problemas esquesitos!? Assim consigo color: black */
+.nav li a1 {
+	display: block;
+	padding: 20px 25px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+.nav li a:hover {
+	color: #666199;
+	background-color: #fff; }
+
+
+
+/* A parte do texto. Faz a partilha do espaco com .boxgrid que tem 50% */
+#body-desc {
+  position: relative;
+  float: right;
+  width: 40%;
+}
+/* A parte da imagem com o movimento da caixa */
+#body-img {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%; 
+}
+#body-cols {
+  margin-left: 10px;
+  margin-right: 10px;
+  position: absolute;
+  height: 100%;
+  width: 95%;
+}
+
+/* Modal overlay styling */
+#overlay {
+  margin-top: 85px;
+  display: none;
+  z-index: 5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* Modal  500 x 500 */
+#overlay .dialog {
+  margin-top: 85px;
+  height: 500px;
+  width: 430px;
+  background-color: #777;
+  border: 8px solid white;
+}
+
+/* Cabecalho da modal */
+.modal{
+
+}
+#overlay .dialog .body-dialog {
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  width: 90%;
+  margin-top: 55px;
+}
+#overlay .dialog .body-dialog p {
+  display: inline-block;
+  text-align: center;
+  font: 14px roboto;
+  color: #EEE;
+  vertical-align: middle;
+}
+#overlay .dialog .body-dialog p span {
+  font-weight: 700;
+}
+/* Butao "Ok amarelo" da modal */
+#overlay .dialog .ok-dialog {
+  float: right;
+  height: 40px;
+  width: 40px;
+  background-color: #333;
+  text-align: center;
+  vertical-align: top;
+}
+#overlay .dialog .ok-dialog [class^="icon-"] {
+  line-height: 100px;
+  font-size: 30px;
+  color: #EEE;
+}
+#overlay .dialog .ok-dialog:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+#overlay #dialog-star .ok-dialog {
+  background-color: #CCCC52;
+}
+#overlay #dialog-star .ok-dialog:hover {
+  background-color: #dddd41;
+}
+
+
+/* Se for necessario define-se mais estilos de movimento exemplo slideright etc --> .js */
+.boxgrid{
+    width: 50%;
+    height: 77%;
+
+    float:left;
+    background:#161613;
+    border: solid 0px #8399AF;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.boxgrid img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+.boxcaption{
+    float: left;
+    position: absolute;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+/* Se for necessario define-se mais estilos de movimento exemplo slideright etc --> .js */
+.captionfull .boxcaption {
+}
+
+/* Faz o movimento no .js */
+.caption .boxcaption {
+}

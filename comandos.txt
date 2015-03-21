@@ -1,0 +1,1000 @@
+ 1995  bundle install
+ 1996  rspec spec/requests/application_helpers_spec.rb 
+ 1997  find . -name '*.erb' -print|xargs grep -i full_title|more
+ 1998  find . -name '*.erb' -print|xargs grep -i title|more
+ 1999  rspec spec/requests/application_helpers_spec.rb 
+ 2000  rspec spec/requests/static_pages_spec.rb
+ 2001  cd novoproj/railsmn-dev-box/shared/app/ruby-getting-started
+ 2002  cd ..
+ 2003  mkdir toto
+ 2004  rename toto tt
+ 2005  ls -la
+ 2006  mv toto tt
+ 2007  ls -la
+ 2008  rm tt
+ 2009  rm -r tt
+ 2010  ls -la
+ 2011  cd ruby-getting-started
+ 2012  git status
+ 2013  git add --all test
+ 2014  git add .
+ 2015  git status
+ 2016  git commit -am "rspec"
+ 2017  git push -u origin master
+ 2018  git status
+ 2019  git remote set-url origin https://github.com/PedroVFX/site-afonsopais.git
+ 2020  git status
+ 2021  cd ..
+ 2022  mv ruby-getting-started site-afonsopais
+ 2023  git status
+ 2024  cd site-afonsopais/
+ 2025  git status
+ 2026  git commit -am "rspec autorun"
+ 2027  git commit -am "autorun"
+ 2028  git push -u origin master
+ 2029  git remote set-url origin https://github.com/PedroVFX/site-afonsopais.git
+ 2030  git push -u origin master
+ 2031  sudo find . -name * -print|xargs grep -i getting-started
+ 2032  sudo find . -name '*' -print|xargs grep -i getting-started
+ 2033  sudo find . -name '*' -print|xargs grep -i getting-started|more
+ 2034  git status
+ 2035  git push -u origin master
+ 2036  git push heroku master
+ 2037  git commit -am "spork"
+ 2038  git status
+ 2039  git commit -am "spork"
+ 2040  git status
+ 2041  git push -u origin master
+ 2042  git push heroku master
+ 2043  heroku ps:scale web=1
+ 2044  heroku open
+ 2045  git status
+ 2046  git commit -am "postgres"
+ 2047  git push -u origin master
+ 2048  git push heroku master
+ 2049  rake db:migrate RAILS_ENV=test
+ 2050  cd ..
+ 2051  cd site-afonsopais/
+ 2052  rvm
+ 2053  rake db:migrate RAILS_ENV=test
+ 2054  bundle install
+ 2055  gem list
+ 2056  rvm gemset list
+ 2057  rake db:migrate RAILS_ENV=test
+ 2058  rake db:create db:migrate RAILS_ENV=test
+ 2059  bundle exec rspec spec/requests/application_helpers_spec.rb
+ 2060  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2061  bundle exec rspec spec/requests/application_helpers_spec.rb
+ 2062  rvm gemset list
+ 2063  rvm gemset use rails4.1
+ 2064  bundle exec rspec spec/requests/application_helpers_spec.rb
+ 2065  rspec -v
+ 2066  bundle exec rspec spec/requests/application_helpers_spec.rb
+ 2067  rails s
+ 2068  bundle exec rspec spec/requests/application_helpers_spec.rb
+ 2069  bundle exec rspec spec/requests/application_helpers_spec.rb:22
+ 2070  bundle exec rspec spec/requests/application_helpers_spec.rb
+ 2071  rails s
+ 2072  bundle exec rspec spec/requests/application_helpers_spec.rb:22
+ 2073  bundle exec rspec spec/requests/application_helpers_spec.rb
+ 2074  bundle exec rspec spec/should-Vs-expect.rb 
+ 2075  bundle exec rspec spec/helpers/should-Vs-expect.rb 
+ 2076  bundle exec rspec spec/helpers/application_helper_spec.rb
+ 2077  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2078  find . -name '*.rb' -print|xargs grep -i sign_in|more
+ 2079  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2080  rspec -v
+ 2081  bundle install
+ 2082  bundle update
+ 2083  rspec -v
+ 2084  rails generate rspec:install
+ 2085  rvm gemset list
+ 2086  bundle update
+ 2087  rails generate rspec:install
+ 2088  bundle update
+ 2089  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2090  bundle update
+ 2091  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2092  bundle exec rspec spec/helpers/application_helper_spec.rb
+ 2093  bundle exec rspec spec/helpers/should-Vs-expect.rb 
+ 2094  bundle exec rspec spec/helpers/application_helper_spec.rb
+ 2095  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2096  bundle exec rspec spec/requests/static_pages_spec.rb|more
+ 2097  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2098  bundle exec rspec spec/requests/static_pages_spec.rb >> xx
+ 2099  vim xx
+ 2100  rm xx
+ 2101  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2102  rails -v
+ 2103  bundle update
+ 2104  bundle exec rspec spec/requests/static_pages_spec.rb >> xx
+ 2105  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2106  rvm gemset list
+ 2107  rails s
+ 2108  bundle update
+ 2109  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2110  sudo bundle exec rspec spec/requests/static_pages_spec.rb|more
+ 2111  bundle exec rspec spec/requests/static_pages_spec.rb|more
+ 2112  vim .rspec 
+ 2113  bundle exec rspec spec/requests/static_pages_spec.rb|more
+ 2114  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2115  bundle update capybara
+ 2116  bundle exec rspec spec/requests/static_pages_spec.rb
+ 2117  history |grep ln
+ 2118  history |grep "ln -ls"
+ 2119  bundle exec rspec spec/features/static_pages_spec.rb
+ 2120  bundle update
+ 2121  rspec --init
+ 2122  rails generate rspec:install
+ 2123  vim .rspec 
+ 2124  bundle exec rspec spec/features/static_pages_spec.rb
+ 2125  bundle exec rspec spec/helpers/application_helper_spec.rb
+ 2126  bundle exec rspec spec/helpers/should-Vs-expect.rb
+ 2127  bundle exec rspec spec/features/static_pages_spec.rb
+ 2128  bundle exec rspec spec/helpers/application_helper_spec.rb
+ 2129  rspec -v
+ 2130  bundle exec rspec spec/helpers/application_helper_spec.rb
+ 2131  rails -v
+ 2132  bundle exec rspec spec/features/static_pages_spec.rb
+ 2133  vim .rspec
+ 2134  bundle exec rspec spec/features/static_pages_spec.rb
+ 2135  bundle exec rspec spec/features/static_pages_spec.rb >> toto.html
+ 2136  vim .rspec
+ 2137  bundle exec rspec spec/features/static_pages_spec.rb
+ 2138  bundle exec rspec spec/features/welcome_spec.rb
+ 2139  rails generate rspec:controller welcome
+ 2140  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2141  bundle exec rspec spec
+ 2142  rails generate rspec:view welcome
+ 2143  bundle exec rspec spec/views/welcome/welcome_view_spec.rb
+ 2144  bundle exec rspec spec/views/welcome/index.html.erb_spec.rb
+ 2145  bundle exec rspec spec
+ 2146  rails generate rspec:helper session
+ 2147  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2148  bundle exec rake db:reset RAILS_ENV=test
+ 2149  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2150  find . -name '*.rb' -print|xargs grep -i session|more
+ 2151  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2152  bundle exec rspec spec
+ 2153* rails generate mi drop_table_widgets
+ 2154  rake db:migrate
+ 2155  rails s
+ 2156  rvm gem list
+ 2157  gem list
+ 2158  rvm all do gem list
+ 2159  rvm gemset list
+ 2160  bundle update
+ 2161  rails s
+ 2162  rvm gemset list
+ 2163  rvm all do gem list
+ 2164  gem list
+ 2165  gem outdated
+ 2166  gem update
+ 2167  bundle update
+ 2168  rails s
+ 2169  bundle exec rspec spec
+ 2170  rails generate rspec:feature session_signin
+ 2171  bundle exec rspec spec/features/session_signins_spec.rb
+ 2172  bundle exec rspec spec
+ 2173  bundle exec rspec spec/features/session_signins_spec.rb
+ 2174  bundle exec rake db:reset RAILS_ENV=test
+ 2175  bundle exec rspec spec/features/session_signins_spec.rb
+ 2176  rails generate rspec:feature texto_lancamento
+ 2177  bundle exec rspec spec/features/texto_lancamentos_spec.rb
+ 2178  rails generate rspec:controller texto_lancamento
+ 2179  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2180  bundle exec script/rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2181  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2182  bundle exec rspec spec/features/texto_lancamentos_spec.rb
+ 2183  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2184  bundle exec rake db:reset RAILS_ENV=test
+ 2185  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2186  bundle exec rspec spec/features/texto_lancamentos_spec.rb
+ 2187  rails s
+ 2188  bundle exec rspec spec/features/texto_lancamentos_spec.rb
+ 2189  bundle exec rspec spec/
+ 2190  find . -name '*.rb' -print|xargs grep -i "@texto_lancamento"|more
+ 2191  find . -name '*.erb' -print|xargs grep -i "@texto_lancamento"|more
+ 2192  rails s
+ 2193  bundle exec rspec spec/
+ 2194  bundle exec rake db:reset RAILS_ENV=test
+ 2195  bundle exec rspec spec/
+ 2196  bundle exec rake db:reset RAILS_ENV=test
+ 2197  bundle exec rspec spec/
+ 2198  rails s
+ 2199  bundle exec rspec spec/
+ 2200  bundle exec rake db:reset RAILS_ENV=test
+ 2201  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2202  bundle exec rspec spec/
+ 2203  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2204  bundle exec rake db:reset RAILS_ENV=test
+ 2205  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2206  bundle exec rspec spec/
+ 2207  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2208  bundle exec rake db:reset RAILS_ENV=test
+ 2209  bundle exec rspec spec/
+ 2210  bundle exec rake db:reset RAILS_ENV=test
+ 2211  bundle exec rspec spec/
+ 2212  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2213  bundle exec rake db:reset RAILS_ENV=test
+ 2214  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2215  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2216  bundle exec rake db:reset RAILS_ENV=test
+ 2217  bundle exec rspec spec/
+ 2218  bundle exec rspec spec/controllers/
+ 2219  bundle exec rake db:reset RAILS_ENV=test
+ 2220  bundle exec rspec spec/controllers/
+ 2221  bundle exec rspec spec/
+ 2222  bundle exec rspec spec/controllers/
+ 2223  bundle exec rspec spec/
+ 2224  bundle exec rspec spec/controllers/
+ 2225  bundle exec rake db:reset RAILS_ENV=test
+ 2226  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2227  bundle exec rspec spec/controllers/
+ 2228  bundle exec rspec spec/
+ 2229  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2230  bundle exec rake db:reset RAILS_ENV=test
+ 2231  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2232  bundle exec rspec spec/
+ 2233  bundle exec rake db:reset RAILS_ENV=test
+ 2234  bundle exec rspec spec/
+ 2235  bundle exec rake db:reset RAILS_ENV=test
+ 2236  bundle exec rspec spec/
+ 2237  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2238  cd ..
+ 2239  cd site-afonsopais/
+ 2240  bundle exec rake db:reset RAILS_ENV=test
+ 2241  bundle exec rspec spec/
+ 2242  bundle exec rake db:reset RAILS_ENV=test
+ 2243  bundle exec rspec spec/
+ 2244  bundle exec rake db:reset RAILS_ENV=test
+ 2245  bundle exec rspec spec/
+ 2246  bundle exec rake db:reset RAILS_ENV=test
+ 2247  bundle exec rspec spec/
+ 2248  bundle exec rake db:reset RAILS_ENV=test
+ 2249  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2250  bundle exec rake db:reset RAILS_ENV=test
+ 2251  bundle exec rspec spec/
+ 2252  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2253  bundle update
+ 2254  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2255  bundle exec rake db:reset RAILS_ENV=test
+ 2256  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2257  bundle exec rspec spec/
+ 2258  bundle exec rake db:reset RAILS_ENV=test
+ 2259  bundle exec rspec spec/
+ 2260  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2261  bundle exec rake db:reset RAILS_ENV=test
+ 2262  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2263  bundle exec rspec spec/
+ 2264  rspec -f Fuubar spec/
+ 2265  rspec -f spec/
+ 2266  rspec spec/
+ 2267  bundle exec rspec spec/
+ 2268  bundle exec rake db:reset RAILS_ENV=test
+ 2269  bundle exec rspec spec/
+ 2270  bundle exec rake db:reset RAILS_ENV=test
+ 2271  bundle exec rspec spec/
+ 2272  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2273  bundle exec rake db:reset RAILS_ENV=test
+ 2274  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2275  bundle exec rspec spec/
+ 2276  bundle exec rake db:reset RAILS_ENV=test
+ 2277  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2278  bundle exec rake db:reset RAILS_ENV=test
+ 2279  bundle exec rspec spec/
+ 2280  bundle exec rake db:reset RAILS_ENV=test
+ 2281  bundle exec rake test:prepare
+ 2282  bundle exec rspec spec/
+ 2283  bundle exec rake db:delete RAILS_ENV=test
+ 2284  bundle exec rake db:remove RAILS_ENV=test
+ 2285  bundle exec rake db:drop RAILS_ENV=test
+ 2286  rake db:create db:migrate RAILS_ENV=test
+ 2287  bundle exec rspec spec/
+ 2288  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2289  bundle exec rake db:reset RAILS_ENV=test
+ 2290  bundle exec rspec spec/
+ 2291  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2292  bundle exec rake db:reset RAILS_ENV=test
+ 2293  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2294  bundle exec rake db:remove RAILS_ENV=test
+ 2295  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2296  bundle exec rspec spec/controllers
+ 2297  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2298  bundle exec rake db:reset RAILS_ENV=test
+ 2299  bundle exec rspec spec/controllers
+ 2300  bundle exec rake db:reset RAILS_ENV=test
+ 2301  bundle exec rspec spec/controllers
+ 2302  bundle exec rake db:reset RAILS_ENV=test
+ 2303  bundle exec rspec spec/
+ 2304  bundle exec rake db:reset RAILS_ENV=test
+ 2305  bundle exec rspec spec/
+ 2306  bundle exec rake db:reset RAILS_ENV=test
+ 2307  bundle exec rspec spec/
+ 2308  bundle exec rake db:reset RAILS_ENV=test
+ 2309  bundle exec rspec spec/controllers
+ 2310  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2311  bundle exec rspec spec/controllers
+ 2312  bundle exec rspec spec/
+ 2313  bundle exec rake db:reset RAILS_ENV=test
+ 2314  bundle exec rspec spec/
+ 2315  bundle exec rake db:test:prepare
+ 2316  bundle exec rspec spec/
+ 2317  bundle exec rake db:test:prepare
+ 2318  bundle exec rspec spec/
+ 2319  gem list
+ 2320  bundle exec rspec spec/
+ 2321  bundle exec rake db:drop RAILS_ENV=test
+ 2322  bundle exec rspec spec/
+ 2323  rake db:create db:migrate RAILS_ENV=test
+ 2324  rake db:create db:prepare RAILS_ENV=test
+ 2325  bundle exec rake test:prepare
+ 2326  bundle exec rspec spec/
+ 2327  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2328  bundle exec rake db:reset RAILS_ENV=test
+ 2329  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2330  bundle exec rspec spec/controllers/
+ 2331  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2332  bundle exec rspec spec/controllers/
+ 2333  bundle exec rspec spec/
+ 2334  bundle exec rake db:reset RAILS_ENV=test
+ 2335  bundle exec rspec spec/
+ 2336  bundle exec rake db:reset RAILS_ENV=test
+ 2337  bundle exec rspec spec/
+ 2338  bundle exec rake db:reset RAILS_ENV=test
+ 2339  bundle exec rspec spec/
+ 2340  bundle exec rake db:reset RAILS_ENV=test
+ 2341  bundle exec rspec spec/
+ 2342  gemset list
+ 2343  rvm gemset list
+ 2344  bundle exec rake db:reset RAILS_ENV=test
+ 2345  bundle exec rspec spec/
+ 2346  bundle exec rspec spec/controllers/
+ 2347  bundle exec rake db:reset RAILS_ENV=test
+ 2348  bundle exec rspec spec/controllers/
+ 2349  bundle exec rspec spec/
+ 2350  bundle exec rspec spec/controllers/
+ 2351  bundle exec rake db:reset RAILS_ENV=test
+ 2352  bundle exec rspec spec/controllers/
+ 2353  bundle exec rspec spec/
+ 2354  bundle exec rake db:reset RAILS_ENV=test
+ 2355  bundle exec rspec spec/
+ 2356  bundle exec rake db:reset RAILS_ENV=test
+ 2357  bundle exec rspec spec/
+ 2358  bundle exec rake db:reset RAILS_ENV=test
+ 2359  bundle exec rspec spec/
+ 2360  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2361  bundle exec rake db:reset RAILS_ENV=test
+ 2362  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2363  bundle exec rake db:reset RAILS_ENV=test
+ 2364  bundle exec rspec spec/
+ 2365  bundle exec rake db:reset RAILS_ENV=test
+ 2366  bundle exec rspec spec/
+ 2367  bundle exec rake db:reset RAILS_ENV=test
+ 2368  bundle exec rspec spec/
+ 2369  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2370  bundle exec rake db:reset RAILS_ENV=test
+ 2371  bundle exec rspec spec/controllers/welcome_controller_spec.rb
+ 2372  bundle exec rake db:reset RAILS_ENV=test
+ 2373  bundle exec rspec spec/
+ 2374  bundle exec rake db:reset RAILS_ENV=test
+ 2375  bundle exec rspec spec/
+ 2376  bundle exec rake db:reset RAILS_ENV=test
+ 2377  bundle exec rspec spec/
+ 2378  bundle exec rake db:reset RAILS_ENV=test
+ 2379  bundle exec rspec spec/
+ 2380  bundle exec rake db:reset RAILS_ENV=test
+ 2381  bundle exec rspec spec/
+ 2382  bundle exec rake db:reset RAILS_ENV=test
+ 2383  bundle exec rspec spec/
+ 2384  bundle exec rake db:reset RAILS_ENV=test
+ 2385  bundle exec rspec spec/
+ 2386  bundle exec rake db:reset RAILS_ENV=test
+ 2387  bundle exec rspec spec/
+ 2388  bundle exec rake db:reset RAILS_ENV=test
+ 2389  bundle exec rspec spec/
+ 2390  bundle exec rake db:reset RAILS_ENV=test
+ 2391  bundle exec rspec spec/
+ 2392  bundle exec rake db:reset RAILS_ENV=test
+ 2393  bundle exec rspec spec/
+ 2394  bundle exec rake db:reset RAILS_ENV=test
+ 2395  bundle exec rspec spec/
+ 2396  bundle exec rake db:reset RAILS_ENV=test
+ 2397  bundle exec rspec spec/
+ 2398  bundle exec rake db:reset RAILS_ENV=test
+ 2399  bundle exec rspec spec/
+ 2400  bundle exec rake db:reset RAILS_ENV=test
+ 2401  bundle exec rspec spec/
+ 2402  bundle exec rake db:reset RAILS_ENV=test
+ 2403  bundle exec rspec spec/
+ 2404  bundle exec rake db:reset RAILS_ENV=test
+ 2405  bundle exec rspec spec/
+ 2406  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2407  bundle exec rake db:reset RAILS_ENV=test
+ 2408  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2409  find . -name '*.rb' -print|xargs grep -i "list "|more
+ 2410  find . -name '*.rb' -print|xargs grep -i "expect"|more
+ 2411  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2412  find . -name '*.rb' -print|xargs grep -i "expect"|more
+ 2413  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2414  find . -name '*.rb' -print|xargs grep -i "expect"|more
+ 2415  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2416  find . -name '*.rb' -print|xargs grep -i "to change"|more
+ 2417  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2418  find . -name '*.rb' -print|xargs grep -i "have_content"|more
+ 2419  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2420  find . -name '*.rb' -print|xargs grep -i "have_content"|more
+ 2421  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2422  bundle exec rake db:reset RAILS_ENV=test
+ 2423  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2424  bundle exec rake db:reset RAILS_ENV=test
+ 2425  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2426  bundle exec rake db:reset RAILS_ENV=test
+ 2427  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2428  bundle exec rake db:reset RAILS_ENV=test
+ 2429  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2430  bundle exec rake db:reset RAILS_ENV=test
+ 2431  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2432  bundle exec rake db:reset RAILS_ENV=test
+ 2433  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2434  bundle exec rake db:reset RAILS_ENV=test
+ 2435  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2436  bundle exec rake db:reset RAILS_ENV=test
+ 2437  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2438  bundle exec rake db:reset RAILS_ENV=test
+ 2439  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2440  bundle exec rake db:reset RAILS_ENV=test
+ 2441  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2442  bundle exec rake db:reset RAILS_ENV=test
+ 2443  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2444  bundle exec rake db:reset RAILS_ENV=test
+ 2445  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2446  bundle exec rake db:reset RAILS_ENV=test
+ 2447  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2448  bundle exec rake db:reset RAILS_ENV=test
+ 2449  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2450  bundle exec rake db:reset RAILS_ENV=test
+ 2451  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2452  bundle exec rake db:reset RAILS_ENV=test
+ 2453  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2454  bundle exec rake db:reset RAILS_ENV=test
+ 2455  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2456  bundle exec rake db:reset RAILS_ENV=test
+ 2457  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2458  bundle exec rake db:reset RAILS_ENV=test
+ 2459  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2460  bundle exec rake db:reset RAILS_ENV=test
+ 2461  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2462  routes
+ 2463  rails routes
+ 2464  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2465  bundle exec rake db:reset RAILS_ENV=test
+ 2466  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2467  bundle exec rake db:reset RAILS_ENV=test
+ 2468  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2469  bundle exec rake db:reset RAILS_ENV=test
+ 2470  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2471  bundle exec rake db:reset RAILS_ENV=test
+ 2472  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2473  bundle exec rake db:reset RAILS_ENV=test
+ 2474  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2475  bundle exec rake db:reset RAILS_ENV=test
+ 2476  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2477  bundle exec rake db:reset RAILS_ENV=test
+ 2478  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2479  bundle exec rake db:reset RAILS_ENV=test
+ 2480  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2481  bundle exec rake db:reset RAILS_ENV=test
+ 2482  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2483  bundle exec rake db:reset RAILS_ENV=test
+ 2484  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2485  bundle exec rake db:reset RAILS_ENV=test
+ 2486  bundle exec rspec spec/
+ 2487  bundle exec rake db:reset RAILS_ENV=test
+ 2488  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2489  bundle exec rake db:reset RAILS_ENV=test
+ 2490  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2491  bundle exec rake db:reset RAILS_ENV=test
+ 2492  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2493  bundle exec rake db:reset RAILS_ENV=test
+ 2494  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2495  bundle exec rake db:reset RAILS_ENV=test
+ 2496  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2497  bundle exec rake db:reset RAILS_ENV=test
+ 2498  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2499  bundle exec rake db:reset RAILS_ENV=test
+ 2500  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2501  bundle exec rake db:reset RAILS_ENV=test
+ 2502  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2503  bundle exec rake db:reset RAILS_ENV=test
+ 2504  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2505  bundle exec rake db:reset RAILS_ENV=test
+ 2506  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2507  bundle exec rake db:reset RAILS_ENV=test
+ 2508  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2509  bundle exec rake db:reset RAILS_ENV=test
+ 2510  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2511  bundle exec rake db:reset RAILS_ENV=test
+ 2512  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2513  bundle exec rake db:reset RAILS_ENV=test
+ 2514  bundle exec rspec spec/
+ 2515  bundle exec rake db:reset RAILS_ENV=test
+ 2516  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2517  bundle exec rake db:reset RAILS_ENV=test
+ 2518  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2519  bundle exec rake db:reset RAILS_ENV=test
+ 2520  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2521  bundle exec rake db:reset RAILS_ENV=test
+ 2522  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2523  bundle exec rake db:reset RAILS_ENV=test
+ 2524  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2525  bundle exec rake db:reset RAILS_ENV=test
+ 2526  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2527  bundle exec rake db:reset RAILS_ENV=test
+ 2528  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2529  bundle exec rake db:reset RAILS_ENV=test
+ 2530  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2531  bundle exec rake db:reset RAILS_ENV=test
+ 2532  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2533  bundle exec rake db:reset RAILS_ENV=test
+ 2534  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2535  bundle exec rake db:reset RAILS_ENV=test
+ 2536  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2537  bundle exec rake db:reset RAILS_ENV=test
+ 2538  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2539  bundle exec rake db:reset RAILS_ENV=test
+ 2540  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2541  bundle exec rake db:reset RAILS_ENV=test
+ 2542  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2543  bundle exec rake db:reset RAILS_ENV=test
+ 2544  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2545  bundle exec rake db:reset RAILS_ENV=test
+ 2546  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2547  bundle exec rake db:reset RAILS_ENV=test
+ 2548  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2549  find . -name '*.rb' -print|xargs grep -i "assign"|more
+ 2550  bundle exec rake db:reset RAILS_ENV=test
+ 2551  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2552  bundle exec rake db:reset RAILS_ENV=test
+ 2553  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2554  bundle exec rake db:reset RAILS_ENV=test
+ 2555  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2556  bundle exec rake db:reset RAILS_ENV=test
+ 2557  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2558  find . -name '*.rb' -print|xargs grep -i "assign"|more
+ 2559  bundle exec rake db:reset RAILS_ENV=test
+ 2560  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2561  bundle exec rake db:reset RAILS_ENV=test
+ 2562  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2563  bundle exec rake db:reset RAILS_ENV=test
+ 2564  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2565  find . -name '*.rb' -print|xargs grep -i "assign"|more
+ 2566  bundle exec rake db:reset RAILS_ENV=test
+ 2567  find . -name '*.rb' -print|xargs grep -i "assign"|more
+ 2568  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2569  bundle exec rake db:reset RAILS_ENV=test
+ 2570  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2571  bundle exec rake db:reset RAILS_ENV=test
+ 2572  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2573  bundle exec rake db:reset RAILS_ENV=test
+ 2574  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2575  bundle exec rake db:reset RAILS_ENV=test
+ 2576  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2577  bundle exec rake db:reset RAILS_ENV=test
+ 2578  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2579  bundle exec rake db:reset RAILS_ENV=test
+ 2580  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2581  bundle exec rake db:reset RAILS_ENV=test
+ 2582  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2583  bundle exec rake db:reset RAILS_ENV=test
+ 2584  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2585  ~
+ 2586  bundle exec rake db:reset RAILS_ENV=test
+ 2587  ~
+ 2588  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2589  ~
+ 2590  bundle exec rake db:reset RAILS_ENV=test
+ 2591  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2592  bundle exec rake db:reset RAILS_ENV=test
+ 2593  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2594  bundle exec rake db:reset RAILS_ENV=test
+ 2595  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2596  bundle exec rake db:reset RAILS_ENV=test
+ 2597  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2598  bundle exec rake db:reset RAILS_ENV=test
+ 2599  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2600  bundle exec rake db:reset RAILS_ENV=test
+ 2601  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2602  bundle exec rake db:reset RAILS_ENV=test
+ 2603  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2604  bundle exec rake db:reset RAILS_ENV=test
+ 2605  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2606  bundle exec rake db:reset RAILS_ENV=test
+ 2607  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2608  bundle exec rake db:reset RAILS_ENV=test
+ 2609  bundle exec rspec spec/
+ 2610  bundle exec rake db:reset RAILS_ENV=test
+ 2611  bundle exec rspec spec/
+ 2612  bundle exec rake db:reset RAILS_ENV=test
+ 2613  bundle exec rspec spec/
+ 2614  bundle exec rake db:reset RAILS_ENV=test
+ 2615  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2616  bundle exec rake db:reset RAILS_ENV=test
+ 2617  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2618  bundle exec rake db:reset RAILS_ENV=test
+ 2619  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2620  bundle exec rake db:reset RAILS_ENV=test
+ 2621  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2622  bundle exec rake db:reset RAILS_ENV=test
+ 2623  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2624  bundle exec rake db:reset RAILS_ENV=test
+ 2625  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2626  bundle exec rake db:reset RAILS_ENV=test
+ 2627  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2628  bundle exec rake db:reset RAILS_ENV=test
+ 2629  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2630  bundle exec rake db:reset RAILS_ENV=test
+ 2631  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2632  bundle exec rake db:reset RAILS_ENV=test
+ 2633  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2634  bundle exec rake db:reset RAILS_ENV=test
+ 2635  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2636  bundle exec rake db:reset RAILS_ENV=test
+ 2637  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2638  bundle exec rake db:reset RAILS_ENV=test
+ 2639  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2640  bundle exec rake db:reset RAILS_ENV=test
+ 2641  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2642  bundle exec rake db:reset RAILS_ENV=test
+ 2643  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2644  bundle exec rake db:reset RAILS_ENV=test
+ 2645  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2646  bundle exec rake db:reset RAILS_ENV=test
+ 2647  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2648  bundle exec rake db:reset RAILS_ENV=test
+ 2649  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2650  bundle exec rake db:reset RAILS_ENV=test
+ 2651  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2652  bundle exec rake db:reset RAILS_ENV=test
+ 2653  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2654  bundle exec rake db:reset RAILS_ENV=test
+ 2655  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2656  bundle exec rake db:reset RAILS_ENV=test
+ 2657  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2658  bundle exec rake db:reset RAILS_ENV=test
+ 2659  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2660  bundle exec rake db:reset RAILS_ENV=test
+ 2661  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2662  bundle exec rake db:reset RAILS_ENV=test
+ 2663  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2664  bundle exec rake db:reset RAILS_ENV=test
+ 2665  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2666  bundle exec rake db:reset RAILS_ENV=test
+ 2667  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2668  bundle exec rake db:reset RAILS_ENV=test
+ 2669  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2670  bundle exec rake db:reset RAILS_ENV=test
+ 2671  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2672  bundle exec rake db:reset RAILS_ENV=test
+ 2673  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2674  bundle exec rake db:reset RAILS_ENV=test
+ 2675  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2676  bundle exec rake db:reset RAILS_ENV=test
+ 2677  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2678  bundle exec rake db:reset RAILS_ENV=test
+ 2679  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2680  bundle exec rake db:reset RAILS_ENV=test
+ 2681  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2682  bundle exec rake db:reset RAILS_ENV=test
+ 2683  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2684  bundle exec rake db:reset RAILS_ENV=test
+ 2685  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2686  bundle exec rake db:reset RAILS_ENV=test
+ 2687  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2688  bundle exec rake db:reset RAILS_ENV=test
+ 2689  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2690  bundle exec rake db:reset RAILS_ENV=test
+ 2691  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2692  bundle exec rake db:reset RAILS_ENV=test
+ 2693  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2694  bundle exec rake db:reset RAILS_ENV=test
+ 2695  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2696  bundle exec rake db:reset RAILS_ENV=test
+ 2697  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2698  bundle exec rake db:reset RAILS_ENV=test
+ 2699  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2700  bundle exec rake db:reset RAILS_ENV=test
+ 2701  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2702  bundle exec rake db:reset RAILS_ENV=test
+ 2703  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2704  bundle exec rake db:reset RAILS_ENV=test
+ 2705  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2706  bundle exec rake db:reset RAILS_ENV=test
+ 2707  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2708  bundle exec rake db:reset RAILS_ENV=test
+ 2709  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2710  bundle exec rake db:reset RAILS_ENV=test
+ 2711  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2712  bundle exec rake db:reset RAILS_ENV=test
+ 2713  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2714  bundle exec rake db:reset RAILS_ENV=test
+ 2715  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2716  bundle exec rake db:reset RAILS_ENV=test
+ 2717  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2718  bundle exec rake db:reset RAILS_ENV=test
+ 2719  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2720  bundle exec rake db:reset RAILS_ENV=test
+ 2721  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2722  bundle exec rake db:reset RAILS_ENV=test
+ 2723  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2724  bundle exec rake db:reset RAILS_ENV=test
+ 2725  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2726  bundle exec rake db:reset RAILS_ENV=test
+ 2727  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2728  bundle exec rake db:reset RAILS_ENV=test
+ 2729  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2730  bundle exec rake db:reset RAILS_ENV=test
+ 2731  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2732  bundle exec rake db:reset RAILS_ENV=test
+ 2733  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2734  bundle exec rake db:reset RAILS_ENV=test
+ 2735  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2736  bundle exec rake db:reset RAILS_ENV=test
+ 2737  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2738  bundle exec rake db:reset RAILS_ENV=test
+ 2739  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2740  bundle exec rake db:reset RAILS_ENV=test
+ 2741  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2742  bundle exec rake db:reset RAILS_ENV=test
+ 2743  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2744  bundle exec rake db:reset RAILS_ENV=test
+ 2745  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2746  bundle exec rake db:reset RAILS_ENV=test
+ 2747  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2748  bundle exec rake db:reset RAILS_ENV=test
+ 2749  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2750  bundle exec rake db:reset RAILS_ENV=test
+ 2751  bundle exec rspec spec/
+ 2752  bundle exec rake db:reset RAILS_ENV=test
+ 2753  bundle exec rspec spec/
+ 2754  bundle exec rake db:reset RAILS_ENV=test
+ 2755  bundle exec rspec spec/
+ 2756  bundle exec rake db:reset RAILS_ENV=test
+ 2757  bundle exec rspec spec/
+ 2758  bundle exec rake db:reset RAILS_ENV=test
+ 2759  bundle exec rspec spec/
+ 2760  bundle exec rake db:reset RAILS_ENV=test
+ 2761  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2762  bundle exec rake db:reset RAILS_ENV=test
+ 2763  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2764  bundle exec rake db:reset RAILS_ENV=test
+ 2765  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2766  bundle exec rake db:reset RAILS_ENV=test
+ 2767  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2768  bundle exec rake db:reset RAILS_ENV=test
+ 2769  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2770  bundle exec rake db:reset RAILS_ENV=test
+ 2771  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2772  bundle exec rake db:reset RAILS_ENV=test
+ 2773  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2774  bundle exec rake db:reset RAILS_ENV=test
+ 2775  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2776  bundle exec rake db:reset RAILS_ENV=test
+ 2777  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2778  bundle exec rake db:reset RAILS_ENV=test
+ 2779  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2780  bundle exec rake db:reset RAILS_ENV=test
+ 2781  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2782  bundle exec rake db:reset RAILS_ENV=test
+ 2783  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2784  bundle exec rake db:reset RAILS_ENV=test
+ 2785  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2786  bundle exec rake db:reset RAILS_ENV=test
+ 2787  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2788  bundle exec rake db:reset RAILS_ENV=test
+ 2789  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2790  bundle exec rake db:reset RAILS_ENV=test
+ 2791  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2792  bundle exec rake db:reset RAILS_ENV=test
+ 2793  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2794  bundle exec rake db:reset RAILS_ENV=test
+ 2795  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2796  bundle exec rake db:reset RAILS_ENV=test
+ 2797  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2798  bundle exec rake db:reset RAILS_ENV=test
+ 2799  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2800  bundle exec rake db:reset RAILS_ENV=test
+ 2801  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2802  bundle exec rake db:reset RAILS_ENV=test
+ 2803  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2804  bundle exec rake db:reset RAILS_ENV=test
+ 2805  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2806  bundle exec rake db:reset RAILS_ENV=test
+ 2807  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2808  bundle exec rake db:reset RAILS_ENV=test
+ 2809  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2810  bundle exec rake db:reset RAILS_ENV=test
+ 2811  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2812  bundle exec rake db:reset RAILS_ENV=test
+ 2813  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2814  bundle exec rake db:reset RAILS_ENV=test
+ 2815  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2816  bundle exec rake db:reset RAILS_ENV=test
+ 2817  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2818  bundle exec rake db:reset RAILS_ENV=test
+ 2819  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2820  bundle exec rake db:reset RAILS_ENV=test
+ 2821  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2822  bundle exec rake db:reset RAILS_ENV=test
+ 2823  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2824  bundle exec rake db:reset RAILS_ENV=test
+ 2825  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2826  bundle exec rake db:reset RAILS_ENV=test
+ 2827  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2828  bundle exec rake db:reset RAILS_ENV=test
+ 2829  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2830  bundle exec rake db:reset RAILS_ENV=test
+ 2831  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2832  bundle exec rake db:reset RAILS_ENV=test
+ 2833  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2834  bundle exec rake db:reset RAILS_ENV=test
+ 2835  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2836  bundle exec rake db:reset RAILS_ENV=test
+ 2837  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2838  bundle exec rake db:reset RAILS_ENV=test
+ 2839  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2840  bundle exec rake db:reset RAILS_ENV=test
+ 2841  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2842  bundle exec rake db:reset RAILS_ENV=test
+ 2843  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2844  bundle exec rake db:reset RAILS_ENV=test
+ 2845  bundle exec rspec spec/
+ 2846  bundle exec rake db:reset RAILS_ENV=test
+ 2847  bundle exec rspec spec/
+ 2848  bundle exec rake db:reset RAILS_ENV=test
+ 2849  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2850  bundle exec rake db:reset RAILS_ENV=test
+ 2851  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2852  bundle exec rake db:reset RAILS_ENV=test
+ 2853  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2854  bundle exec rake db:reset RAILS_ENV=test
+ 2855  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2856  bundle exec rake db:reset RAILS_ENV=test
+ 2857  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2858  bundle exec rake db:reset RAILS_ENV=test
+ 2859  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2860  bundle exec rake db:reset RAILS_ENV=test
+ 2861  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2862  bundle exec rake db:reset RAILS_ENV=test
+ 2863  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2864  bundle exec rake db:reset RAILS_ENV=test
+ 2865  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2866  bundle exec rake db:reset RAILS_ENV=test
+ 2867  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2868  bundle exec rake db:reset RAILS_ENV=test
+ 2869  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2870  bundle exec rake db:reset RAILS_ENV=test
+ 2871  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2872  bundle exec rake db:reset RAILS_ENV=test
+ 2873  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2874  bundle exec rake db:reset RAILS_ENV=test
+ 2875  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2876  bundle exec rake db:reset RAILS_ENV=test
+ 2877  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2878  bundle exec rake db:reset RAILS_ENV=test
+ 2879  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2880  bundle exec rake db:reset RAILS_ENV=test
+ 2881  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2882  bundle exec rake db:reset RAILS_ENV=test
+ 2883  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2884  bundle exec rake db:reset RAILS_ENV=test
+ 2885  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2886  bundle exec rake db:reset RAILS_ENV=test
+ 2887  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2888  bundle exec rake db:reset RAILS_ENV=test
+ 2889  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2890  bundle exec rake db:reset RAILS_ENV=test
+ 2891  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2892  bundle exec rake db:reset RAILS_ENV=test
+ 2893  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2894  bundle exec rake db:reset RAILS_ENV=test
+ 2895  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2896  bundle exec rake db:reset RAILS_ENV=test
+ 2897  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2898  bundle exec rake db:reset RAILS_ENV=test
+ 2899  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2900  bundle exec rake db:reset RAILS_ENV=test
+ 2901  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2902  bundle exec rake db:reset RAILS_ENV=test
+ 2903  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2904  bundle exec rake db:reset RAILS_ENV=test
+ 2905  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2906  bundle exec rake db:reset RAILS_ENV=test
+ 2907  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2908  bundle exec rake db:reset RAILS_ENV=test
+ 2909  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2910  bundle exec rake db:reset RAILS_ENV=test
+ 2911  bundle exec rspec spec
+ 2912  bundle exec rake db:reset RAILS_ENV=test
+ 2913  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2914  bundle exec rake db:reset RAILS_ENV=test
+ 2915  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2916  rails s
+ 2917  bundle exec rake db:reset RAILS_ENV=test
+ 2918  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2919  bundle exec rake db:reset RAILS_ENV=test
+ 2920  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2921  bundle exec rake db:reset RAILS_ENV=test
+ 2922  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2923  bundle exec rake db:reset RAILS_ENV=test
+ 2924  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2925  bundle exec rake db:reset RAILS_ENV=test
+ 2926  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2927  bundle exec rake db:reset RAILS_ENV=test
+ 2928  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2929  bundle exec rake db:reset RAILS_ENV=test
+ 2930  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2931  bundle exec rake db:reset RAILS_ENV=test
+ 2932  bundle exec rspec spec/controllers/texto_lancamento_controller_spec.rb
+ 2933  bundle exec rake db:reset RAILS_ENV=test
+ 2934  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2935  bundle exec rake db:reset RAILS_ENV=test
+ 2936  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2937  bundle exec rake db:reset RAILS_ENV=test
+ 2938  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2939  bundle exec rake db:reset RAILS_ENV=test
+ 2940  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2941  bundle exec rake db:reset RAILS_ENV=test
+ 2942  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2943  bundle exec rake db:reset RAILS_ENV=test
+ 2944  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2945  bundle exec rake db:reset RAILS_ENV=test
+ 2946  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2947  bundle exec rake db:reset RAILS_ENV=test
+ 2948  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2949  bundle exec rake db:reset RAILS_ENV=test
+ 2950  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2951  bundle exec rake db:reset RAILS_ENV=test
+ 2952  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2953  bundle exec rake db:reset RAILS_ENV=test
+ 2954  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2955  bundle exec rake db:reset RAILS_ENV=test
+ 2956  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2957  bundle exec rake db:reset RAILS_ENV=test
+ 2958  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2959  bundle exec rake db:reset RAILS_ENV=test
+ 2960  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2961  bundle exec rake db:reset RAILS_ENV=test
+ 2962  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2963  bundle exec rake db:reset RAILS_ENV=test
+ 2964  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2965  bundle exec rake db:reset RAILS_ENV=test
+ 2966  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2967  bundle exec rake db:reset RAILS_ENV=test
+ 2968  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2969  bundle exec rake db:reset RAILS_ENV=test
+ 2970  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2971  bundle exec rake db:reset RAILS_ENV=test
+ 2972  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2973  bundle exec rake db:reset RAILS_ENV=test
+ 2974  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2975  bundle exec rake db:reset RAILS_ENV=test
+ 2976  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2977  bundle exec rake db:reset RAILS_ENV=test
+ 2978  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2979  bundle exec rake db:reset RAILS_ENV=test
+ 2980  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2981  bundle exec rake db:reset RAILS_ENV=test
+ 2982  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2983  bundle exec rake db:reset RAILS_ENV=test
+ 2984  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2985  bundle exec rake db:reset RAILS_ENV=test
+ 2986  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2987  bundle exec rake db:reset RAILS_ENV=test
+ 2988  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2989  bundle exec rake db:reset RAILS_ENV=test
+ 2990  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2991  bundle exec rake db:reset RAILS_ENV=test
+ 2992  bundle exec rspec spec/helpers/session_helper_spec.rb
+ 2993  history
+ 2994  history >> comandos.txt

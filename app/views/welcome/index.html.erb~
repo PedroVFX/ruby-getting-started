@@ -9,7 +9,7 @@
 
 
 		<div id="texto">
-			<% if @texto_lancamento %>
+			<% if @txt_lancamentos %>
 				<%= render partial: 'texto_lancamento' %>
 			<% end %>
 		</div>
@@ -17,13 +17,13 @@
 
 		<div id="videos">
 			<div>
-				<% if @youtube_items %>
-					<%= render partial: 'youtube_items' %>
+				<% if @vimeo_items %>
+					<%= render partial: 'vimeo_items' %>
 				<% end %>
 			</div>
 			<div>
-				<% if @vimeo_items %>
-					<%= render partial: 'vimeo_items' %>
+				<% if @youtube_items %>
+					<%= render partial: 'youtube_items' %>
 				<% end %>
 			</div>
 		</div>

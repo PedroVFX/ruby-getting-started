@@ -1,6 +1,6 @@
 class TextoLancamentosController < ApplicationController
   before_action :signed_in_user,
-                only: [:index, :edit, :update, :destroy]
+                only: [:create,  :index, :edit, :update, :destroy]
   #Desta maneira so o admin e que remove o(s) texto(s)
   #before_action :admin_user,     only: :destroy
   before_action :set_texto_lancamento, only: [:show, :edit, :update, :destroy]
@@ -8,7 +8,7 @@ class TextoLancamentosController < ApplicationController
   # GET /texto_lancamentos
   # GET /texto_lancamentos.json
   def index
-    @texto_lancamentos = TextoLancamento.all
+    @texto_lancamentos = TextoLancamento.all.order('updated_at DESC')
   end
 
   # GET /texto_lancamentos/1

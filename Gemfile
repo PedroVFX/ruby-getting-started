@@ -1,7 +1,15 @@
 source 'https://rubygems.org'
 gem 'node'
-# Twitter Bootstrap for Rails 
-gem 'twitter-bootstrap-rails', '2.2.8'
+
+gem 'jquery-turbolinks'
+# For .css.less and .less
+gem 'less-rails'
+# for the JavaScript
+gem 'therubyracer'
+
+
+# Twitter Bootstrap for Rails == '2.2.8'
+gem 'twitter-bootstrap-rails'
 gem 'bcrypt-ruby', '3.1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -49,4 +57,5 @@ group :development, :test do
 	gem 'rspec'
 	gem 'capybara'
 	gem 'shoulda-matchers'
+        gem 'database_cleaner'
 end

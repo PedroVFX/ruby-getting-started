@@ -1,0 +1,178 @@
+<html>
+
+    <div id="overlay">
+
+      <!-- Muda a cor de fundo deste container que tem 500x500 -->
+      <div id="dialog-area1" class="dialog modal">
+
+        <!-- Funcao click para fechar modal no icon "Ok", ver no .js -->
+        <div class="ok-dialog" color="red"><h2>X</h2></div>
+        <!-- Cabecalho da modal -->
+        <div class="body-dialog">
+          
+          <!-- Prepara 2 Colunas nesta div-->
+		  <div id="body-cols">
+		       <!-- Primeira Coluna com imagem-->
+		       <div class="boxgrid caption" >
+		         <img id="body-img" src="assets/afonso.jpg"> 
+		         <!-- Faz o movimento da caixa na imagem-->
+			 <div class="cover boxcaption">
+			 </div>
+		       </div>
+		       <!-- Segunda Coluna com texto -->
+		       <div id="body-desc">
+		         <p>Bacon ipsum dolor sit amet culpa adipisicing andouille ut, salami bresaola spare ribs shank fatback cupidatat est. Occaecat beef flank fatback beef ribs. Sed tempor officia, proident ullamco elit short loin ham hock short ribs laborum pariatur. Nisi frankfurter sint, boudin aute andouille chicken corned beef. Shank pariatur pork loin deserunt et nostrud, sausage ut.</p>
+		       </div>
+		  </div>
+
+
+        </div>
+
+      </div> <!-- /dialog-star -->
+    </div> <!-- /overlay -->
+
+
+<!-- AREA 1  -->
+
+
+
+	<div id="proj_area1">
+          <!-- pa1 (proj area 1) coluna da esquerda -->
+          <div id="pa1_coluna1">
+
+		    <div id="wrapper">
+		      <div id="area1" class="dialog-open">
+			<div id="foto_area1_1" class="foto_area1">
+			<img id="body-img" src="assets/proj_area1_f1.png"></div>
+		      </div>
+		    </div>
+
+		  <!-- Deverao ser butoes com coursor=pointer -->
+		  <div id="br_linha"></div>
+		  <div id="foto_area1_2" class="foto_area1">
+			<img id="body-img" src="assets/proj_area1_f2.png">
+		  </div>
+		  <div id="br_linha"></div>
+		  <div class="marcador"></div>
+		  <div id="foto_area1_3" class="foto_area1">
+			<img id="body-img" src="assets/proj_area1_f3.png">
+		  </div>
+          </div>
+          <!-- coluna da direita -->
+          <div id="pa1_coluna2">
+		  <div id="foto_area1_4" class="foto_area1">
+			<img id="body-img" src="assets/proj_area1_f4.png">
+		  </div>
+		  <div id="br_linha"></div>
+		  <div id="foto_area1_5" class="foto_area1">
+			<img id="body-img" src="assets/proj_area1_f5.png">
+		  </div>
+		  <div id="br_linha"></div>
+		  <div id="foto_area1_6" class="foto_area1">
+			<img id="body-img" src="assets/proj_area1_f6.png">
+		  </div>
+          </div>
+        </div> <!-- proj_area1 -->
+
+<!-- DIVISAO 1  -->
+        <div id="br_linha"></div>
+        <div id="proj_div_1"></div>
+        <div id="br_linha"></div>
+<!-- FIM DIVISAO 1  -->
+
+
+<!-- AREA 2  -->
+	<div id="proj_area1">
+          <!-- pa2 (proj area 2) coluna da esquerda -->
+          <div id="pa1_coluna1">
+                  <div id="foto_area2_1" class="foto_area2" >
+			<img id="body-img" src="assets/proj_area1_f5.png">
+		  </div>
+		  <button id="foto_area2_1e" class="foto_area2e" >
+			<img id="body-img" src="assets/proj_area1_f6.png">
+		  </button>
+          </div>
+          <!-- coluna da direita -->
+          <div id="pa1_coluna2">
+		  <div id="foto_area2_2" class="foto_area2 button">
+			<img id="body-img" src="assets/proj_area1_f2.png">
+		  </div>
+		  <button id="foto_area2_2e" class="foto_area2e" >
+			<img id="body-img" src="assets/proj_area1_f4.png">
+		  </button>
+          </div>
+        </div> <!-- proj_area1 -->
+
+<!-- DIVISAO 2  -->
+        <div id="br_linha"></div>
+        <div id="proj_div_1"></div>
+        <div id="br_linha"></div>
+<!-- FIM DIVISAO 2  -->
+
+
+    <!-- Butao que chama a Modal
+    <div id="wrapper">
+      <div id="star" class="button dialog-open">
+        <div id="foto_robalo"></div>
+      </div>
+    </div>
+
+    <!-- Modal que substitui os seus elementos
+    <div id="overlay">
+
+      <!-- Muda a cor de fundo deste container que tem 500x500 
+      <div id="dialog-area1" class="dialog modal">
+
+        <!-- Funcao click para fechar modal no icon "Ok", ver no .js 
+        <div class="ok-dialog"><img src="https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-3pc6w/images/avatar.jpg"></i></div>
+
+        <!-- Cabecalho da modal 
+        <div class="body-dialog">
+          <!-- Butao para a substituicao da div
+          <p id="btnAction" class="button"> toto </p>
+          <p>The Star dialog </p>
+          <!-- Prepara 2 Colunas nesta div
+	 <div id="pai">
+	  <div id="filho">
+		  <div id="body-cols">
+		       <!-- Primeira Coluna com imagem
+		       <div class="boxgrid caption" >
+		         <img id="body-img" src="https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-3pc6w/images/avatar.jpg"> 
+		         <!-- Faz o movimento da caixa na imagem
+			 <div class="cover boxcaption">
+			 </div>
+		       </div>
+		       <!-- Segunda Coluna com texto
+		       <div id="body-desc">
+		         <p>as das dia log as das dia logas das dia logas das dia logas das dia logas das dia logas das dia logas das dia log</p>
+		       </div>
+		  </div>
+	  </div>
+	 </div>
+
+        </div>
+
+      </div> <!-- /dialog-star
+    </div> <!-- /overlay
+
+
+
+<div id="demo">
+          <div id="body-cols">
+               <!-- Primeira Coluna com imagem
+               <div class="boxgrid caption" >
+                 <img id="body-img" src="https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-3pc6w/images/avatar.jpg"> 
+                 <!-- Faz o movimento da caixa na imagem
+		 <div class="cover boxcaption">
+	         </div>
+               </div>
+               <!-- Segunda Coluna com texto
+               <div id="body-desc">
+                 <p>qww</p>
+               </div>
+          </div>
+</div>
+-->
+
+<html>
+

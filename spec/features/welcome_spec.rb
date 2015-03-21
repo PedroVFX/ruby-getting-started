@@ -1,6 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "Features for Welcome page", :type => :feature do # feature ou request
+RSpec.describe "Welcome", :type => :feature do
+  describe "Features", :type => :feature do # feature ou request
 
     subject { page }
 
@@ -11,16 +12,22 @@ RSpec.describe "Features for Welcome page", :type => :feature do # feature ou re
       it { expect(page).to have_content('Afonso Pais') }
     end
 
-    describe "Shows the items of texto_lancamento" do
+    describe "For the items of @texto_lancamentos" do
       before do
-	FactoryGirl.create(:texto_lancamento)
-        visit root_path #'/'
+        30.times { FactoryGirl.create(:texto_lancamento) }
+        visit root_path
       end
-      it { expect(page).to have_content('Lorem') }
-      it { expect(page).to have_content('toto') }
+      after(:all)  { TextoLancamento.delete_all }
+
+      it "should list each of them" do
+        TextoLancamento.all.each do |texto_lancamento|
+          expect(page).to have_content(texto_lancamento.nome)
+          expect(page).to have_content(texto_lancamento.descricao)
+        end
+      end
     end
 
-    describe "Shows the items of soundcloud_items" do
+    describe "Shows the items of @soundcloud_items" do
       before do
 	FactoryGirl.create(:soundcloud_item)
         visit root_path #'/'
@@ -29,7 +36,7 @@ RSpec.describe "Features for Welcome page", :type => :feature do # feature ou re
       it { expect(page).to have_content('toto') }
     end
 
-    describe "Shows the items of vimeo_items" do
+    describe "Shows the items of @vimeo_items" do
       before do
 	FactoryGirl.create(:vimeo_item)
         visit root_path #'/'
@@ -38,7 +45,7 @@ RSpec.describe "Features for Welcome page", :type => :feature do # feature ou re
       it { expect(page).to have_content('toto') }
     end
 
-    describe "Shows the items of youtube_items" do
+    describe "Shows the items of @youtube_items" do
       before do
 	FactoryGirl.create(:youtube_item)
         visit root_path #'/'
@@ -50,10 +57,10 @@ RSpec.describe "Features for Welcome page", :type => :feature do # feature ou re
 
     describe "If signed in user" do
       before do
-	FactoryGirl.create(:user)
+	usr = FactoryGirl.create(:user)
         visit signin_path #'/signin'
-        fill_in 'Email', :with => 'user@example.com'
-        fill_in 'Password', :with => 'foobar'
+        fill_in 'Email', :with => usr.email
+        fill_in 'Password', :with => usr.password
         click_button 'Sign in'
       end
       it { expect(page).to have_content('Sign out') }
@@ -69,5 +76,5 @@ RSpec.describe "Features for Welcome page", :type => :feature do # feature ou re
       end
       it { expect(page).to have_content('Sign in') }
     end
-
+  end
 end

@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  before_action :youtube_items, :soundcloud_items, :texto_lancamento, :vimeo_items, only: [:index] 
+  before_action :youtube_items, :soundcloud_items, :texto_lancamentos, :vimeo_items, only: [:index] 
 
   # GET /welcome
   def index
@@ -18,8 +18,8 @@ class WelcomeController < ApplicationController
     @soundcloud_items = SoundcloudItem.all.order('updated_at DESC')
   end
 
-  def texto_lancamento
-    @texto_lancamento = TextoLancamento.all.order('updated_at DESC')
+  def texto_lancamentos
+    @texto_lancamentos = TextoLancamento.all.order('updated_at DESC')
   end
 
 

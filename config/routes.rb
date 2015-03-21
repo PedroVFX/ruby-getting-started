@@ -22,6 +22,8 @@ Rails.application.routes.draw do
 
   get 'about' => 'about#about'
 
+  match '/projectos', to: 'projectos#projectos',         via: 'get'
+
   #match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'

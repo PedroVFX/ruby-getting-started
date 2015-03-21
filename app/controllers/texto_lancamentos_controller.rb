@@ -1,6 +1,6 @@
 class TextoLancamentosController < ApplicationController
   before_action :signed_in_user,
-                only: [:index, :edit, :update, :destroy]
+                only: [:create, :new, :show, :index, :edit, :update, :destroy]
   #Desta maneira so o admin e que remove o(s) texto(s)
   #before_action :admin_user,     only: :destroy
   before_action :set_texto_lancamento, only: [:show, :edit, :update, :destroy]

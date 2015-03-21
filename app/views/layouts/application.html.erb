@@ -8,9 +8,11 @@
 </head>
 <body>
     <title><%= full_title(yield(:title)) %></title>
+
 <div id="margem_header">
-    <%= render 'layouts/header' %>
-</div>
+    <%= render 'layouts/stikyheader' %>
+</div> 
+
     <div class="sem-container">
       <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>

@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Afonso Pais apresenta “Terra Concreta”</title>
+  <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<title>Afonso Pais apresenta “Terra Concreta”</title>
-<div id="margem_header">
-    <%= render 'layouts/header' %>
-</div>
+    <title><%= full_title(yield(:title)) %></title>
+
     <div class="sem-container">
       <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>
