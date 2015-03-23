@@ -1,5 +1,5 @@
 <html>
-
+<body id="bkgProjectos">
     <div id="overlay">
 
       <!-- Muda a cor de fundo deste container que tem 500x500 -->
@@ -43,33 +43,34 @@
 		    <div id="wrapper">
 		      <div id="area1" class="dialog-open">
 			<div id="foto_area1_1" class="foto_area1">
-			<img id="body-img" src="assets/proj_area1_f1.png"></div>
+			  <a data-no-turbolink='true' href="/"><img id="body-img" src="assets/proj_area1_f1.png"></a>
+                        </div>
 		      </div>
 		    </div>
 
 		  <!-- Deverao ser butoes com coursor=pointer -->
 		  <div id="br_linha"></div>
 		  <div id="foto_area1_2" class="foto_area1">
-			<img id="body-img" src="assets/proj_area1_f2.png">
+			<img id="body-img" src="assets/proj_area1_f2.jpg">
 		  </div>
 		  <div id="br_linha"></div>
 		  <div class="marcador"></div>
 		  <div id="foto_area1_3" class="foto_area1">
-			<img id="body-img" src="assets/proj_area1_f3.png">
+			<img id="body-img" src="assets/proj_area1_f3.jpg">
 		  </div>
           </div>
           <!-- coluna da direita -->
           <div id="pa1_coluna2">
 		  <div id="foto_area1_4" class="foto_area1">
-			<img id="body-img" src="assets/proj_area1_f4.png">
+			<img id="body-img" src="assets/proj_area1_f4.jpg">
 		  </div>
 		  <div id="br_linha"></div>
 		  <div id="foto_area1_5" class="foto_area1">
-			<img id="body-img" src="assets/proj_area1_f5.png">
+			<img id="body-img" src="assets/proj_area1_f5.jpg">
 		  </div>
 		  <div id="br_linha"></div>
 		  <div id="foto_area1_6" class="foto_area1">
-			<img id="body-img" src="assets/proj_area1_f6.png">
+			<img id="body-img" src="assets/proj_area1_f6.jpg">
 		  </div>
           </div>
         </div> <!-- proj_area1 -->
@@ -86,20 +87,20 @@
           <!-- pa2 (proj area 2) coluna da esquerda -->
           <div id="pa1_coluna1">
                   <div id="foto_area2_1" class="foto_area2" >
-			<img id="body-img" src="assets/proj_area1_f5.png">
+			<img id="body-img" src="assets/proj_area1_f5.jpg">
 		  </div>
-		  <button id="foto_area2_1e" class="foto_area2e" >
-			<img id="body-img" src="assets/proj_area1_f6.png">
-		  </button>
+		  <div id="foto_area2_1e" class="foto_area2e" >
+			<img id="body-img" src="assets/proj_area1_f6.jpg">
+		  </div>
           </div>
           <!-- coluna da direita -->
           <div id="pa1_coluna2">
 		  <div id="foto_area2_2" class="foto_area2 button">
-			<img id="body-img" src="assets/proj_area1_f2.png">
+			<img id="body-img" src="assets/proj_area1_f2.jpg">
 		  </div>
-		  <button id="foto_area2_2e" class="foto_area2e" >
-			<img id="body-img" src="assets/proj_area1_f4.png">
-		  </button>
+		  <div id="foto_area2_2e" class="foto_area2e" >
+			<img id="body-img" src="assets/proj_area1_f6.jpg">
+		  </div>
           </div>
         </div> <!-- proj_area1 -->
 
@@ -173,6 +174,6 @@
           </div>
 </div>
 -->
-
+</body>
 <html>
 

@@ -1,3 +1,8 @@
+/* IMAGEM FUNDO */
+#bkgProjectos {
+	background: white;
+}
+
 /* Area de projectos 1 */
 #br_linha {
     clear: both;
@@ -8,8 +13,8 @@
 
 .foto_area1 {
   position:relative;
-  width: 200px;
-  height: 180px;
+  width: 190px;
+  height: 190px;
   background-color:white;
   background-size: cover;
   background-position: center center;
@@ -127,7 +132,11 @@
 /* Para ficar colado no topo de codepen*/
 .logo {font-size:40px; font-weight:bold;color:#00a; font-style:italic;}
 .intro {color:#777; font-style:italic; margin:10px 0;}
-.menu {margin-top: 0px;}
+.menu {
+  height:55px;
+  margin-top: 0px;
+  border: 0px solid #ccc;
+}
 .content {margin-top:10px;}
 .menu-padding {padding-top:40px;}
 .content {padding:10px;}
@@ -135,7 +144,7 @@
 .desc_posicao {
   margin-left: 190px;
   border: 0px solid #ccc;
-  padding: 10px 10px; color:black; background:white; 
+  padding: 10px 10px; 0em; 0; color:black; background:white; 
   height:28px; width:15%;
   font-size: 18px; 
   font-weight:bold;
@@ -170,14 +179,16 @@
 	padding: 20px 25px;
 	text-decoration: none;
 	font-weight: bold;
+	font-size:15px;
 	color: grey;
 }
-/* Class active tem problemas esquesitos!? Assim consigo color: black */
+/* Class 'active' tem problemas esquesitos!? Assim consigo color: black */
 .nav li a1 {
 	display: block;
 	padding: 20px 25px;
 	text-decoration: none;
 	font-weight: bold;
+	font-size:15px;
 	color: black;
 }
 .nav li a:hover {
@@ -201,7 +212,6 @@
 }
 #body-cols {
   margin-left: 10px;
-  margin-right: 10px;
   position: absolute;
   height: 100%;
   width: 95%;
@@ -209,24 +219,17 @@
 
 /* Modal overlay styling */
 #overlay {
-  margin-top: 85px;
-  display: none;
-  z-index: 5;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
 
 }
 
 /* Modal  500 x 500 */
 #overlay .dialog {
-  margin-top: 85px;
+  margin-top: 90px;
   height: 500px;
   width: 430px;
   background-color: #777;
-  border: 8px solid white;
+  border: 0px solid white;
+  margin-left: 5px;
 }
 
 /* Cabecalho da modal */

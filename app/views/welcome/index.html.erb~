@@ -1,6 +1,6 @@
 <html>
-<head>
-<body onload="init()">
+
+<body id="bkgWelcome" onload="init()">
 		<div id="btnStart">
 			<canvas id="background" width="1366px" height="299px">
 			      Your browser does not support canvas. Please try again with a different browser.
@@ -9,7 +9,7 @@
 
 
 		<div id="texto">
-			<% if @txt_lancamentos %>
+			<% if @texto_lancamentos %>
 				<%= render partial: 'texto_lancamento' %>
 			<% end %>
 		</div>

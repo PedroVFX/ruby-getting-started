@@ -7,6 +7,7 @@
 ready = ->
 
 
+
   # Stiki Menu - Necessario adicionar o clone no carregamento da pag para a DOM
   $('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide()
 
@@ -14,9 +15,10 @@ ready = ->
   $('#foto_area2_1').click ->
      # Troca VISIBILIDADE TAMANHO e POSICAO
      $('#foto_area2_1e').css 'visibility', 'visible'
-     $('#foto_area2_1e').css 'width', '400px'
-     $('#foto_area2_1e').css 'height', '380px'
+     $('#foto_area2_1e').css 'width', '61%'
+     $('#foto_area2_1e').css 'height', '61%'
      $('#foto_area2_1e').css 'float', 'right'
+     $('#foto_area2_1e').css 'margin-bottom', '1%'
      $('#foto_area2_1e').css 'margin-right', '16%'
 
      $('#foto_area2_1').css 'visibility', 'hidden'
@@ -40,9 +42,10 @@ ready = ->
   # AREA 2 - FOTO 2
   $('#foto_area2_2').click ->
      $('#foto_area2_2e').css 'visibility', 'visible'
-     $('#foto_area2_2e').css 'width', '400px'
-     $('#foto_area2_2e').css 'height', '380px'
+     $('#foto_area2_2e').css 'width', '61%'
+     $('#foto_area2_2e').css 'height', '61%'
      $('#foto_area2_2e').css 'float', 'left'
+     $('#foto_area2_2e').css 'margin-bottom', '1%'
      $('#foto_area2_2e').css 'margin-left', '16%'
 
      $('#foto_area2_2').css 'visibility', 'hidden'
@@ -198,9 +201,9 @@ stickIt = ->
     $('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement).show()
     $('.original').css 'visibility', 'hidden'
     if $(window).scrollTop() > marcador
-      $('.desc_posicao').css 'visibility', 'visible'
+      #$('.desc_posicao').css 'visibility', 'visible'
     else
-      $('.desc_posicao').css 'visibility', 'hidden'
+      #$('.desc_posicao').css 'visibility', 'hidden'
   else
     $('.cloned').hide()
     $('.original').css 'visibility', 'visible'
