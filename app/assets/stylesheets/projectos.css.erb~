@@ -1,3 +1,8 @@
+/* IMAGEM FUNDO */
+#bkgProjectos {
+	background: white;
+}
+
 /* Area de projectos 1 */
 #br_linha {
     clear: both;
@@ -8,8 +13,8 @@
 
 .foto_area1 {
   position:relative;
-  width: 200px;
-  height: 180px;
+  width: 190px;
+  height: 190px;
   background-color:white;
   background-size: cover;
   background-position: center center;
@@ -20,6 +25,7 @@
 
 /* width e height no coffee */
 .foto_area2 {
+  cursor:pointer;
   margin-top: 17.5%;
   position:relative;
   width: 200px;
@@ -31,6 +37,7 @@
 }
 /* ESCONDIDA 400px X 380px */
 .foto_area2e {
+  cursor:pointer;
   position:relative;
   width: 40px;
   height: 38px;
@@ -58,10 +65,11 @@
   float: left;
   height: 100%;
   width: 49%;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
 }
 
 #foto_area1_1 {
+  cursor:pointer;
   float: right;
   margin-right: -1px;
 }
@@ -79,9 +87,10 @@
   float: left;
   height: 100%;
   width: 49%;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
 }
 #foto_area1_4 {
+  cursor:pointer;
   float: left;
   margin-left: -1px;
 }
@@ -104,40 +113,42 @@
 /* AREA 2 */
 #foto_area2_1 {
   float: right;
-  margin-right: -1px;
+
 }
 /* ECONDIDA */
 #foto_area2_1e {
   float: left;
-  margin-right: -1px;
-visibility: visible;
 }
 #foto_area2_2 {
   float: left;
-  margin-left: -1px;
+
 }
 /* ECONDIDA */
 #foto_area2_2e {
   float: right;
-  margin-left: -1px;
-visibility: visible;
 }
 
 
 /* Para ficar colado no topo de codepen*/
 .logo {font-size:40px; font-weight:bold;color:#00a; font-style:italic;}
 .intro {color:#777; font-style:italic; margin:10px 0;}
-.menu {margin-top: 0px;}
+.menu {
+  height:55px;
+  margin-top: 0px;
+  border: 0px solid #ccc;
+}
 .content {margin-top:10px;}
 .menu-padding {padding-top:40px;}
 .content {padding:10px;}
 .content p {margin-bottom:20px;}
 .desc_posicao {
-  margin: -18px 0px 0em 0px;
+  margin-left: 190px;
   border: 0px solid #ccc;
-  padding: 10px 10px; color:grey; background:#f2f2f2; 
+  padding: 10px 10px; 0em; 0; color:black; background:white; 
   height:28px; width:15%;
-  visibility: visible; /* visible V hidden */
+  font-size: 18px; 
+  font-weight:bold;
+  visibility: hidden; /* visible V hidden */
 }
 #center_desc {
   float: center;
@@ -168,22 +179,21 @@ visibility: visible;
 	padding: 20px 25px;
 	text-decoration: none;
 	font-weight: bold;
+	font-size:15px;
 	color: grey;
 }
-/* Class active tem problemas esquesitos!? Assim consigo color: black */
+/* Class 'active' tem problemas esquesitos!? Assim consigo color: black */
 .nav li a1 {
 	display: block;
 	padding: 20px 25px;
 	text-decoration: none;
 	font-weight: bold;
+	font-size:15px;
 	color: black;
 }
 .nav li a:hover {
 	color: #666199;
 	background-color: #fff; }
-
-
-
 
 
 
@@ -202,7 +212,6 @@ visibility: visible;
 }
 #body-cols {
   margin-left: 10px;
-  margin-right: 10px;
   position: absolute;
   height: 100%;
   width: 95%;
@@ -210,43 +219,33 @@ visibility: visible;
 
 /* Modal overlay styling */
 #overlay {
-  display: none;
-  z-index: 5;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
 
 }
 
 /* Modal  500 x 500 */
 #overlay .dialog {
-  z-index: 10;
-  display: none;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  margin-top: 90px;
   height: 500px;
-  width: 500px;
+  width: 430px;
   background-color: #777;
-        border: 10px solid #ccc;
+  border: 0px solid white;
+  margin-left: 5px;
 }
 
 /* Cabecalho da modal */
+.modal{
+
+}
 #overlay .dialog .body-dialog {
   float: left;
   height: 100px;
   line-height: 100px;
   width: 90%;
+  margin-top: 55px;
 }
 #overlay .dialog .body-dialog p {
   display: inline-block;
   text-align: center;
-  padding: 10px;
   font: 14px roboto;
   color: #EEE;
   vertical-align: middle;
@@ -257,8 +256,8 @@ visibility: visible;
 /* Butao "Ok amarelo" da modal */
 #overlay .dialog .ok-dialog {
   float: right;
-  height: 100px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   background-color: #333;
   text-align: center;
   vertical-align: top;
@@ -288,7 +287,7 @@ visibility: visible;
 
     float:left;
     background:#161613;
-    border: solid 2px #8399AF;
+    border: solid 0px #8399AF;
     overflow: hidden;
     position: relative;
 
@@ -317,5 +316,3 @@ visibility: visible;
 /* Faz o movimento no .js */
 .caption .boxcaption {
 }
-
-
