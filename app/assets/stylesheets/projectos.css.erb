@@ -1,8 +1,3 @@
-/* IMAGEM FUNDO */
-#bkgProjectos {
-	background: white;
-}
-
 /* Area de projectos 1 */
 #br_linha {
     clear: both;
@@ -23,41 +18,14 @@
 
 }
 
-/* width e height no coffee */
-.foto_area2 {
-  cursor:pointer;
-  margin-top: 17.5%;
-  position:relative;
-  width: 200px;
-  height: 270px;
-  background-color:white;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-/* ESCONDIDA 400px X 380px */
-.foto_area2e {
-  cursor:pointer;
-  position:relative;
-  width: 40px;
-  height: 38px;
-  background-color:white;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  visibility: hidden;
-}
-
-
+/* AREA 1 para COLUNA 1 Esquerda e COLUNA 2 Direita */
 #proj_area1 {
   position: relative;
-  margin-top: 0%;
   float: center;
   height: 100%;
   width: 100%;
   border: 0px solid black;
 }
-
 
 /* COLUNA 1  AREA 1 */
 #pa1_coluna1 {
@@ -71,15 +39,12 @@
 #foto_area1_1 {
   cursor:pointer;
   float: right;
-  margin-right: -1px;
 }
 #foto_area1_2 {
   float: right;
-  margin-right: -1px;
 }
 #foto_area1_3 {
   float: right;
-  margin-right: -1px;	
 }
 /* COLUNA 2 AREA 1 */
 #pa1_coluna2 {
@@ -92,36 +57,85 @@
 #foto_area1_4 {
   cursor:pointer;
   float: left;
-  margin-left: -1px;
 }
 #foto_area1_5 {
   float: left;
-  margin-left: -1px;
 }
 #foto_area1_6 {
   float: left;
-  margin-left: -1px;
 }
 /* DIVISAO da area 1 para a 2 */
 #proj_div_1 {
   position: relative;
-  height: 122px;
+  height: 50%;
   width: 100%;
+  background-color:white;
+  visibility: hidden; /* hidden */
+}
+
+/* nao usada */
+.foto_area2 {
+  cursor:pointer;
+  margin-top: 0%;
+  position:relative;
+  width: 200px;
+  height: 270px;
+  background-color:white;
+}
+/* ESCONDIDA */
+.foto_area2e {
+  margin-top: 0%;
+  position:relative;
+  width: 5px;
+  height: 5px;
   background-color:white;
   visibility: visible; /* hidden */
 }
-/* AREA 2 */
-#foto_area2_1 {
-  float: right;
 
+/* AREA 2 para COLUNA 1 Esquerda e COLUNA 2 Direita */
+#proj_area2 {
+  position: relative;
+  float: center;
+  height: 555px; /* era 100% (nao respeitava as dimensoes) */
+  margin-top:0px;
+  width: 100%;
+  border: 0px solid black;
+}
+/* COLUNA 1 esquerda */
+#pa2_coluna1 {
+  position: relative;
+  float: left;
+  height: 60%; /* era 100% (verticalmente longo de mais para movel) */
+  width: 49%;
+  border: 1px solid #ccc;
+}
+#foto_area2_1 {
+  margin-top:0%;
+  position:relative;
+  width: 200px;
+  height: 270px;
+  background-color:white;
+  float: right;
 }
 /* ECONDIDA */
 #foto_area2_1e {
   float: left;
 }
-#foto_area2_2 {
+/* COLUNA 2 direita */
+#pa2_coluna2 {
+  position: relative;
   float: left;
-
+  height: 60%;
+  width: 49%;
+  border: 1px solid #ccc;
+}
+#foto_area2_2 {
+  margin-top: 0%;
+  position:relative;
+  width: 200px;
+  height: 270px;
+  background-color:white;
+  float: left;
 }
 /* ECONDIDA */
 #foto_area2_2e {
@@ -129,92 +143,67 @@
 }
 
 
-/* Para ficar colado no topo de codepen*/
-.logo {font-size:40px; font-weight:bold;color:#00a; font-style:italic;}
-.intro {color:#777; font-style:italic; margin:10px 0;}
-.menu {
-  height:55px;
-  margin-top: 0px;
-  border: 0px solid #ccc;
-}
-.content {margin-top:10px;}
-.menu-padding {padding-top:40px;}
-.content {padding:10px;}
-.content p {margin-bottom:20px;}
-.desc_posicao {
-  margin-left: 190px;
-  border: 0px solid #ccc;
-  padding: 10px 10px 0em 0; color:black; background:white; 
-  height:28px; width:15%;
-  font-size: 18px; 
-  font-weight:bold;
-  visibility: hidden; /* visible V hidden */
-}
-#center_desc {
-  float: center;
-}
-.navbar {
-	margin-bottom: 0;
-	padding: 0;
-	border: 0px solid #ccc;
 
-}
-
-/* Fim colado */
-.nav {
-	width: 100%;
-	float: center;
-	margin: 0 0 1em 0;
-	padding: 0;
-	background-color: #f2f2f2;
-	border-bottom: 0px solid #ccc;  }
-.nav ul {
-	list-style: none;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0; }
-
-.nav li a {
-	display: block;
-	padding: 20px 25px;
-	text-decoration: none;
-	font-weight: bold;
-	font-size:15px;
-	color: grey;
-}
-/* Class 'active' tem problemas esquesitos!? Assim consigo color: black */
-.nav li a1 {
-	display: block;
-	padding: 20px 25px;
-	text-decoration: none;
-	font-weight: bold;
-	font-size:15px;
-	color: black;
-}
-.nav li a:hover {
-	color: #666199;
-	background-color: #fff; }
-
-
-
-/* A parte do texto. Faz a partilha do espaco com .boxgrid que tem 50% */
-#body-desc {
-  position: relative;
-  float: right;
-  width: 40%;
-}
-/* A parte da imagem com o movimento da caixa */
+/* Ocupa o espaco total da div para todas as img */
 #body-img {
   position: relative;
   float: left;
   width: 100%;
   height: 100%; 
 }
+
+#body-img-pa2_1 {
+  cursor:pointer;
+  margin-top: 25%;
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 270px; 
+}
+#body-img-pa2_1e {
+
+  position: relative;
+  float: right;
+  width: 100%;
+  height: 100%; 
+}
+#body-img-pa2_2 {
+  cursor:pointer;
+  margin-top: 25%;
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 270px; 
+}
+#body-img-pa2_2e {
+  cursor:pointer;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%; 
+}
+
+
+#body-img-dentro2 {
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 50px; 
+}
+
+/* DUAS COLUNAS para a MODAL */
 #body-cols {
   margin-left: 10px;
   position: absolute;
   height: 100%;
   width: 95%;
+}
+
+/* COLUNA 2 da MODAL parte do texto. Faz a partilha do espaco com .boxgrid que tem 50% */
+#body-desc {
+  position: relative;
+  float: right;
+  width: 40%;
 }
 
 /* Modal overlay styling */

@@ -12,5 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require welcome
  *= require projectos
+ *= require background
  */

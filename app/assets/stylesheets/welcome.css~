@@ -5,6 +5,18 @@ canvas {
 
 
 body {
+}
+
+#bkgHome {
+	background: url("proj_area1_f4.jpg");
+	background-color:white;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+}
+
+#bkgWelcome {
 	background: url("book2.jpg");
 	background-color:black;
         background-size: cover;
@@ -12,7 +24,6 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed; 
 }
-
 
 html {
 	height: 100%;
