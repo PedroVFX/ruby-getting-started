@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :participacaos
+
   resources :users
 
   resources :vimeo_items
@@ -23,6 +25,7 @@ Rails.application.routes.draw do
   get 'about' => 'about#about'
   get 'home' => 'home#index'
   get 'terraconcreta' => 'welcome#index'
+  get 'participacoes' => 'participacaos#index'
 
   match '/projectos', to: 'projectos#projectos',         via: 'get'
 

@@ -1,3 +1,9 @@
+function teste() {
+        alert("teste-js");
+	teste1();
+}
+
+
 window.looping = true;
 // Maneira correcta de declarar global. O IE da barraca com a declaracao "var n=0;".
 window.n = 0;
@@ -48,7 +54,7 @@ var image1 = new function() {
         this.background = new Image();
         
         // Set images src
-        this.background.src = 'https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-3pc6w/images/avatar.jpg';
+        this.background.src = '<%= asset_path("bird1.png") %>';
 
 }
 

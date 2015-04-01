@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141213050131) do
+ActiveRecord::Schema.define(version: 20150331234651) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "participacaos", force: true do |t|
+    t.string   "dialog"
+    t.string   "titulo"
+    t.string   "imagem"
+    t.text     "texto"
+    t.text     "nota"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "url_code_share"
+    t.string   "soundcloud_item"
+  end
 
   create_table "soundcloud_items", force: true do |t|
     t.string   "item"

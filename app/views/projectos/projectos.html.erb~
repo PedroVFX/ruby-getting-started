@@ -1,33 +1,41 @@
 <html>
-<body id="bkgProjectos">
-    <!-- coffee click define o comportamento Modal (so fecha com o "X")  -->
+<!-- onload NAO FUNCIONA no coffee -->
+<body id="bkgProjectos" onload="teste()">
+    <!-- apenas serve para identificar a paguina projectos para activar no menu via coffee -->
+    <div id="nome_paguina">projectos</div>
+
+    <!-- overlay: coffee click define o comportamento Modal (so fecha com o "X")  -->
     <div id="overlay">
-
-      <!-- Muda a cor de fundo deste container que tem 500x500 -->
-      <!-- Associa a div pa1_coluna1_f1_modal com o coffee click dialog para a class modal-->
-      <div id="dialog-pa1_coluna1_f1_modal" class="dialog modal">
-
+      <!-- OVERLEY AREA 1  -->
+      <!-- Associa a div pa1_f1_modal (parte do nome de "dialog-pa1_f1_modal" ) com o coffee click dialog para a class modal-->
+      <div id="dialog-pa1_f1_modal" class="dialog modal">
         <!-- coffee click para fechar modal "X" -->
-        <div class="ok-dialog" color="red"><h2>X</h2></div>
+        <div class="ok-dialog"><h2>X</h2></div>
         <!-- Cabecalho da modal -->
         <div class="body-dialog">
-          
           <!-- Prepara 2 Colunas nesta div-->
-		  <div id="body-cols">
+		  <div id="pa1_modal_body-cols">
 		       <!-- Primeira Coluna com imagem animada via coffee over boxgrid caption e cover -->
-		       <div class="boxgrid caption" >
+		       <div id="pa1_modal_img">
 		         <div><img id="body-img" src="assets/afonso.jpg"></div>
-		         <!-- Faz o movimento da caixa na imagem-->
-			 <div class="cover boxcaption">
-			 </div>
 		       </div>
 		       <!-- Segunda Coluna com texto -->
-		       <div id="body-desc">
-		         <p>Bacon ipsum dolor sit amet culpa adipisicing andouille ut, salami bresaola spare ribs shank fatback cupidatat est. Occaecat beef flank fatback beef ribs. Sed tempor officia, proident ullamco elit short loin ham hock short ribs laborum pariatur. Nisi frankfurter sint, boudin aute andouille chicken corned beef. Shank pariatur pork loin deserunt et nostrud, sausage ut.</p>
+		       <div id="pa1_modal_txt">	
+		         <p>Bacon ipsum dolo sd-sqq qw wwq qqqq olo sd-sqq qw wwq qqqq rrttry olo sd-sqq qw wwq qqqq rrttryzc olo sd-sqq qw wwq qqqq rrttry zcds sd sasdw rds sd sasdw rzcds sd sasdw rrr ttryzc ds sd sasdw ripsum dolo sd-sqq qw wwq qqqq olo sd-sqq qw wwq qqqq rrttry olo sd-sqq qw wwq qqqq rrttryzc olo sd-sqq qw wwq qqqq rrttry zcds sd sasdw rds sd sasdw rzcds sd sasdw rrr ttryzc ds sd sasdwipsum dolo sd-sqq qw wwq qqqq olo sd-sqq qw wwq qqqq rrttry olo sd-sqq qw wwq qqqq rrttryzc olo sd-sqq qw wwq qqqq rrttry zcds sd sasdw rds sd sasdw rzcds sd sasdw rrr ttryzc ds sd sasdw.</p>
+		       </div>
+		       <div id="br_linha"></div>
+		       <div id="pa1_modal_sound">
+		         <p style="color:blue">SoundCloud</p>
 		       </div>
 		  </div>
         </div>
-      </div> <!-- /dialog-star -->
+      </div> <!-- /dialog-pa1_coluna1_f1_modal -->
+
+      <!-- OVERLEY AREA 3 para a IMAGEM 1..14 -->
+      <%= render partial: 'participacoes' %>
+
+
+
     </div> <!-- /overlay -->
 
 
@@ -35,12 +43,13 @@
 <!-- AREA 1: coffee click apenas na imagens 1 para chamar Modal. Na outra e por href via link_to   -->
 	<div id="proj_area1">
           <!-- pa1 (proj area 1) coluna da esquerda -->
+          <!-- foto_area1 eh a area para todas as imagens da area 1  -->
           <div id="pa1_coluna1">
 
 		  <div id="wrapper">
                     <!-- Chama a MODAL via div overlay -->
                     <!-- TRUQUE: pa1_coluna1_f1_modal nao tem css, div usada no overlay para chamar a Modal por coffee click   -->
-		    <div id="pa1_coluna1_f1_modal" class="dialog-open">
+		    <div id="pa1_f1_modal" class="dialog-open">
 		        <!-- css foto_area1_1 com cursor=pointer (hand)-->
 			<div id="foto_area1_1" class="foto_area1">
 			  <img id="body-img" src="assets/proj_area1_f1.png">
@@ -87,52 +96,58 @@
 
 <!-- AREA 2: coffee click nas imagens para definir novas dimensoes css das div's respeitando a area2 e respectivas colunas -->
 	<div id="proj_area2">
-          <!-- pa2 (proj area 2) coluna da esquerda -->
+          <!-- coffee click ocupa a area total da altura em px definida em proj_area2, nao faz sobreposicao -->
           <div id="pa2_coluna1">
 		  <!-- foto_area2_1: ocupa a coluna 1 com 200x270 (coffe click foto_area2_1 ampliada, reduz-se e amplia foto_area2_1e) -->
                   <div id="foto_area2_1">
 			<!-- body-img-pa2_1: ocupa 200x270 e mantem o min 200x270 de foto_area2_1 200x270 via coffee-->
-			<div><img id="body-img-pa2_1" src="assets/proj_area1_f5.jpg"></div>
+			<div><img id="body-img-pa2_1" src="assets/proj_area1_f3.jpg"></div>
 		  </div>
   		  <!-- foto_area2e: ocupa a coluna 1 com 5x5 (coffe click foto_area2_1e ampliada, reduz-se e amplia foto_area2_1) -->
 		  <div id="foto_area2_1e" class="foto_area2e" >
 			<!-- body-img: ocupa 100% da foto_area2e -->
 			<!-- body-img-pa2_1e: arruma ah esquerda e mantem o minimo 200x270 de foto_area2e via coffee -->
-			<div id="body-img-pa2_1e"><img id="body-img" src="assets/proj_area1_f6.jpg"></div>
+			<div id="body-img-pa2_1e"><img id="body-img" src="assets/proj_area1_f4.jpg"></div>
 		  </div>
           </div>
+	  <!-- coffee click ocupa a area total da coluna, despresa a altura definida em proj_area2 o que da jeito pela sobreposicao -->
           <div id="pa2_coluna2">
 		  <div id="foto_area2_2">
 			<div><img id="body-img-pa2_2" src="assets/proj_area1_f2.jpg"></div>
 		  </div>
 		  <div id="foto_area2_2e" class="foto_area2e" >
-			<!-- <div id="body-img"><img id="body-img" src="assets/proj_area1_f6.jpg"></div>    PARA FICAR DENTRO  -->
-			<div><img id="body-img" src="assets/proj_area1_f6.jpg"></div>
+			<!-- <div id="body-img"><img id="body-img" src="assets/proj_area1_f6.jpg"></div>    PARA FICAR DENTRO   -->
+			<div><img id="body-img" src="assets/proj_area1_f4.jpg"></div>
 		  </div>
           </div>
         </div>
-          <!-- coluna da direita 
-          <div id="pa2_coluna2">
-		  <div id="foto_area2_2" class="foto_area2 button">
-			<div><img id="body-img" src="assets/proj_area1_f2.jpg"></div>
-		  </div>
-		  <div id="foto_area2_2e" class="foto_area2e" >
-			<div><img id="body-img" src="assets/proj_area1_f6.jpg"></div>
-		  </div>
-          </div>
-        </div>  proj_area2 -->
-
-
-
-    <div>
-	<font color="#0000FF">sdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadff sdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadffsdfsadf fsdffffffsd asdf sdfdddddd sadffffffffff sadff
-        </font>
-    </div>
 <!-- DIVISAO 2: Define uma div para divisao da AREA2 e AREA3 -->
         <div id="br_linha"></div>
-        <div id="proj_div_1"></div>
+        <div id="proj_div_2"></div>
         <div id="br_linha"></div>
 <!-- FIM DIVISAO 2  -->
+
+<!-- AREA 3: coffee click nas imagens para chamar MODAL com iframe soundcloud -->
+	<div id="proj_area3">
+	  <div id="wrapper">
+	   	<div id="pa3_linha1">
+                    <!-- Chama a MODAL via div pa3_overlay -->
+                    <!-- TRUQUE: pa3_f1_modal nao tem css, div usada no pa3_overlay para chamar a Modal por coffee click  -->
+                    <%= render partial: 'wrapper_participacoes' %>
+           	</div>
+	  </div> <!-- /wrapper -->
+	</div> <!-- /proj_area3 -->
+
+        <div>
+	  <font color="#0000FF">
+          </font>
+        </div>
+<!-- DIVISAO 2: Define uma div para divisao da AREA2 e AREA3 -->
+        <div id="br_linha"></div>
+        <div id="proj_div_3"></div>
+        <div id="br_linha"></div>
+<!-- FIM DIVISAO 2  -->
+
 </body>
 <html>
 

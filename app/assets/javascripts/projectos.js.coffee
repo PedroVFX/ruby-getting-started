@@ -5,18 +5,30 @@
 # MENU
 scrollIntervalID = undefined
 stickIt = undefined
+menuactivo = undefined
 
 # MODAL
 modal = {}
 
+teste = ->
+  alert "test-coffee"
+
+# FUNCAO menuactivo ( Sendo chamado do html nao reconhece o valor do parametro )
+menuActivo = ->
+  p = String(location).indexOf(document.getElementById("nome_paguina").innerHTML)
+  #alert 'pag:' +  document.getElementById("nome_paguina").innerHTML
+  if p > 0
+    $('#a3').css 'color', 'black'
+
 # DOCUMENT READY (onload/change) - No final deste doc existe a chamada a var func ready
 ready = ->
-
   # Stiki Menu - Necessario adicionar o clone no carregamento da pag, para a existir na DOM
   $('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide()
 
   # MENU: Chama a funcao que ja tem os elementos carregados na DOM
   scrollIntervalID = setInterval(stickIt, 10)
+
+  menuActivo()
 
   # AREA 2 - COLUNA 1 e 2 -------------------------------- image click
   $('#foto_area2_1').click ->
@@ -26,15 +38,15 @@ ready = ->
      $('#foto_area2_1e').css 'height', '100%'
      $('#foto_area2_1e').css 'float', 'right'
 
-     $('#body-img-pa2_1').css 'min-width', '200px'
+     $('#body-img-pa2_1').css 'min-width', '190px'
      $('#body-img-pa2_1').css 'min-height', '270px'
-     #$('#body-img-pa2_1e').css 'min-width', '200px'
+     #$('#body-img-pa2_1e').css 'min-width', '190px'
      #$('#body-img-pa2_1e').css 'min-height', '270px'
-     $('#foto_area2_1').css 'visibility', 'visible'  #hidden
+     $('#foto_area2_1').css 'visibility', 'hidden'  #hidden
      $('#foto_area2_1').css 'float', 'right'
      $('#foto_area2_1').css 'margin-top', '0%'
-     $('#foto_area2_1').css 'width', '10px'
-     $('#foto_area2_1').css 'height', '10px'
+     $('#foto_area2_1').css 'width', '0px'
+     $('#foto_area2_1').css 'height', '0px'
      return
 
   $('#foto_area2_1e').click ->
@@ -42,14 +54,14 @@ ready = ->
      $('#foto_area2_1').css 'width', '40%'
      $('#foto_area2_1').css 'height', '60%'
      $('#foto_area2_1').css 'float', 'right'
-     $('#body-img-pa2_1').css 'min-width', '200px'
+     $('#body-img-pa2_1').css 'min-width', '190px'
      $('#body-img-pa2_1').css 'min-height', '270px'
 
      $('#foto_area2_1e').css 'visibility', 'visible' #hidden
      $('#foto_area2_1e').css 'float', 'left'
      $('#foto_area2_1e').css 'margin-top', '0%'
-     $('#foto_area2_1e').css 'width', '10px'
-     $('#foto_area2_1e').css 'height', '10px'
+     $('#foto_area2_1e').css 'width', '0px'
+     $('#foto_area2_1e').css 'height', '0px'
      return
 
   $('#foto_area2_2').click ->
@@ -57,16 +69,16 @@ ready = ->
      $('#foto_area2_2e').css 'width', '100%'
      $('#foto_area2_2e').css 'height', '100%'
      $('#foto_area2_2e').css 'float', 'left'
-     $('#body-img-pa2_2').css 'min-width', '200px'
+     $('#body-img-pa2_2').css 'min-width', '190px'
      $('#body-img-pa2_2').css 'min-height', '270px'
-     #$('#body-img-pa2_2e').css 'min-width', '200px'
+     #$('#body-img-pa2_2e').css 'min-width', '190px'
      #$('#body-img-pa2_2e').css 'min-height', '270px'
 
      $('#foto_area2_2').css 'visibility', 'visible'  #hidden
      $('#foto_area2_2').css 'float', 'left'
      $('#foto_area2_2').css 'margin-top', '0%'
-     $('#foto_area2_2').css 'width', '10px'
-     $('#foto_area2_2').css 'height', '10px'
+     $('#foto_area2_2').css 'width', '0px'
+     $('#foto_area2_2').css 'height', '0px'
      return
 
   $('#foto_area2_2e').click ->
@@ -74,24 +86,41 @@ ready = ->
      $('#foto_area2_2').css 'width', '40%'
      $('#foto_area2_2').css 'height', '60%'
      $('#foto_area2_2').css 'float', 'left'
-     $('#body-img-pa2_2').css 'min-width', '200px'
+     $('#body-img-pa2_2').css 'min-width', '190px'
      $('#body-img-pa2_2').css 'min-height', '270px'
 
      $('#foto_area2_2e').css 'visibility', 'visible' #hidden
-     $('#foto_area2_2e').css 'width', '10px'
-     $('#foto_area2_2e').css 'height', '10px'
+     $('#foto_area2_2e').css 'width', '0px'
+     $('#foto_area2_2e').css 'height', '0px'
      $('#foto_area2_2e').css 'float', 'left'
      $('#foto_area2_2e').css 'margin-top', '0%'
      return
   # AREA 2 - COLUNA 1 e 2 -------------------------------------- FIM
 
 
-  # AREA 1 COLUNA 1 ----------------- chamar modal
+  # Muda a dimensao da MODAL para area 1
+  $('.foto_area1').click ->
+    modal.hide()
+    $('.dialog').css 'width', '430px'
+    $('.dialog').css 'height', '500px'
+    $('.dialog').css 'margin', '0'
+    $('.dialog').css 'margin-top', '90px'
+    $('.dialog').css 'margin-left', '5px'
+
+  # Muda a dimensao da MODAL para area 3
+  $('.foto_area3').click ->
+    modal.hide()
+    $('.dialog').css 'width', '480px'
+    $('.dialog').css 'height', '320px'
+    $('.dialog').css 'margin', 'auto'
+
+  # Chamar a MODAL
   $('.dialog-open').click ->
     modal.id = '#dialog-' + @id
     $('#overlay').fadeIn()
     $(modal.id).fadeIn()
     return
+  # Fecha a MODAL
   $('.ok-dialog').click ->
     modal.hide()
     return
@@ -224,9 +253,10 @@ stickIt = ->
 $(document).ready(ready)
 $(document).on('page:change', ready)
 
-  # NESTE SITIO ESTE CODIGO NUNCA FUNCIONARAH (so dentro da var ready = ->)
-  #if $(window).scrollTop() >= 0  
-  #  $('.original').click -> alert " orig " +  $(window).scrollTop() + " marcador " +  marcador
-  #  $('.cloned').click -> alert " clone " +  $(window).scrollTop() + " marcador " +  marcador
-  #  $('.menu').click -> alert " menu "+ $(window).scrollTop() + " marcador " +  marcador
-  #return
+
+# NESTE SITIO ESTE CODIGO NUNCA FUNCIONARAH (so dentro da var ready = ->)
+#if $(window).scrollTop() >= 0  
+#  $('.original').click -> alert " orig " +  $(window).scrollTop() + " marcador " +  marcador
+#  $('.cloned').click -> alert " clone " +  $(window).scrollTop() + " marcador " +  marcador
+#  $('.menu').click -> alert " menu "+ $(window).scrollTop() + " marcador " +  marcador
+#return
