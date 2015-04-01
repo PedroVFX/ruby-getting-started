@@ -12,7 +12,7 @@
   visibility: hidden; /* visible V hidden */
 }
 
-/* MENU para ficar colado no topo quando exite scrool */
+/* MENU para ficar colado no topo quando existe scrool */
 .menu {
   margin-top: 0px;
   border: 0px solid #ccc;
@@ -45,13 +45,13 @@ nav {height:65px;}
 	color: grey;
 }
 /* Class 'active' tem problemas esquesitos!? Assim consigo color: black */
-.nav li a1 {
+#a1 {
 	display: block;
 	padding: 20px 25px;
 	text-decoration: none;
 	font-weight: bold;
 	font-size:15px;
-	color: black;
+	color: grey;
 }
 .nav li a:hover {
 	color: #666199;

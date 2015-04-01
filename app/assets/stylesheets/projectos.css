@@ -1,10 +1,17 @@
-/* Area de projectos 1 */
+/* Ocupa o espaco total da div para todas as img */
+#body-img {
+  position: relative;
+  width: 100%;
+  height: 100%; 
+}
 #br_linha {
     clear: both;
 }
-
-#demo1{position:relative;}
-#demo2{position:relative;}
+#nome_paguina {
+  height: 0px;
+  width: 0px;
+  visibility: hidden;
+}
 
 .foto_area1 {
   position:relative;
@@ -67,9 +74,26 @@
 /* DIVISAO da area 1 para a 2 */
 #proj_div_1 {
   position: relative;
-  height: 50%;
+  height: 100px;
   width: 100%;
-  background-color:white;
+  background-color:blue;
+  z-index: -1;
+  visibility: hidden; /* hidden */
+}
+#proj_div_2 {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color:grey;
+  z-index: -1;
+  visibility: hidden; /* hidden */
+}
+#proj_div_3 {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color:black;
+  z-index: -1;
   visibility: hidden; /* hidden */
 }
 
@@ -78,7 +102,7 @@
   cursor:pointer;
   margin-top: 0%;
   position:relative;
-  width: 200px;
+  width: 190px;
   height: 270px;
   background-color:white;
 }
@@ -86,8 +110,8 @@
 .foto_area2e {
   margin-top: 0%;
   position:relative;
-  width: 5px;
-  height: 5px;
+  width: 0px;
+  height: 0px;
   background-color:white;
   visibility: visible; /* hidden */
 }
@@ -96,7 +120,7 @@
 #proj_area2 {
   position: relative;
   float: center;
-  height: 555px; /* era 100% (nao respeitava as dimensoes) */
+  height: 355px; /* Define a area para a foto ampliada apenas da colunas 1. Na 2 a foto eh ampliada fora desta area sem causar problemas */
   margin-top:0px;
   width: 100%;
   border: 0px solid black;
@@ -105,19 +129,19 @@
 #pa2_coluna1 {
   position: relative;
   float: left;
-  height: 60%; /* era 100% (verticalmente longo de mais para movel) */
+  height: 100%; /* 60% de 555px de area para a foto ampliada da coluna 1 */
   width: 49%;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
 }
 #foto_area2_1 {
   margin-top:0%;
   position:relative;
-  width: 200px;
+  width: 190px;
   height: 270px;
   background-color:white;
   float: right;
 }
-/* ECONDIDA */
+/* ECONDIDA A SER AMPLIADA */
 #foto_area2_1e {
   float: left;
 }
@@ -125,14 +149,14 @@
 #pa2_coluna2 {
   position: relative;
   float: left;
-  height: 60%;
+  height: 100%;
   width: 49%;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
 }
 #foto_area2_2 {
   margin-top: 0%;
   position:relative;
-  width: 200px;
+  width: 190px;
   height: 270px;
   background-color:white;
   float: left;
@@ -140,24 +164,14 @@
 /* ECONDIDA */
 #foto_area2_2e {
   float: right;
+  z-index: 1000;
 }
-
-
-
-/* Ocupa o espaco total da div para todas as img */
-#body-img {
-  position: relative;
-  float: left;
-  width: 100%;
-  height: 100%; 
-}
-
 #body-img-pa2_1 {
   cursor:pointer;
-  margin-top: 25%;
+  margin-top: 85px;
   position: relative;
   float: right;
-  width: 200px;
+  width: 190px;
   height: 270px; 
 }
 #body-img-pa2_1e {
@@ -169,10 +183,10 @@
 }
 #body-img-pa2_2 {
   cursor:pointer;
-  margin-top: 25%;
+  margin-top: 85px;
   position: relative;
   float: left;
-  width: 200px;
+  width: 190px;
   height: 270px; 
 }
 #body-img-pa2_2e {
@@ -183,90 +197,46 @@
   height: 100%; 
 }
 
-
-#body-img-dentro2 {
-  position: relative;
-  float: left;
-  width: 50px;
-  height: 50px; 
+/* AREA 3 todas as imagens com a mesma area e centradas na div pa3_linha1 e pa3_linha2 */
+.foto_area3 {
+  float:left;
+  position:relative;
+  width: 150px;
+  height: 150px;
+  border: 0px solid #ccc;
+}
+/* AREA 3 para LINHA 1 e LINHA 2 */
+#proj_area3 {
+  display:block; /* CENTER */
+  margin:auto;   /* CENTER */
+  height: 300px;  /* O dobro da altura das imagens .foto_area3 */ 
+  width: 1050px;
+  border: 0px solid black;
 }
 
-/* DUAS COLUNAS para a MODAL */
-#body-cols {
-  margin-left: 10px;
-  position: absolute;
-  height: 100%;
-  width: 95%;
+/* LINHA 1  AREA 3 */
+#pa3_linha1 {
+  height: 50%;   /* Metade da altura da area3 */
+  width: 100%;
+  border: 0px solid #ccc;
 }
 
-/* COLUNA 2 da MODAL parte do texto. Faz a partilha do espaco com .boxgrid que tem 50% */
-#body-desc {
-  position: relative;
-  float: right;
-  width: 40%;
+#foto_area3_1 {
+  cursor:pointer;
+}
+/* LINHA 2  AREA 3 */
+#pa3_linha2 {
+  height: 50%;  /* Metade da altura da area3 */
+  width: 100%;
+  border: 0px solid #ccc;
+}
+#foto_area3_2 {
+  cursor:pointer;
+}
+#foto_area3_3 {
+  cursor:pointer;
 }
 
-/* Modal overlay styling */
-#overlay {
-
-}
-
-/* Modal  500 x 500 */
-#overlay .dialog {
-  margin-top: 90px;
-  height: 500px;
-  width: 430px;
-  background-color: #777;
-  border: 0px solid white;
-  margin-left: 5px;
-}
-
-/* Cabecalho da modal */
-.modal{
-
-}
-#overlay .dialog .body-dialog {
-  float: left;
-  height: 100px;
-  line-height: 100px;
-  width: 90%;
-  margin-top: 55px;
-}
-#overlay .dialog .body-dialog p {
-  display: inline-block;
-  text-align: center;
-  font: 14px roboto;
-  color: #EEE;
-  vertical-align: middle;
-}
-#overlay .dialog .body-dialog p span {
-  font-weight: 700;
-}
-/* Butao "Ok amarelo" da modal */
-#overlay .dialog .ok-dialog {
-  float: right;
-  height: 40px;
-  width: 40px;
-  background-color: #333;
-  text-align: center;
-  vertical-align: top;
-}
-#overlay .dialog .ok-dialog [class^="icon-"] {
-  line-height: 100px;
-  font-size: 30px;
-  color: #EEE;
-}
-#overlay .dialog .ok-dialog:hover {
-  background-color: #555;
-  cursor: pointer;
-}
-
-#overlay #dialog-star .ok-dialog {
-  background-color: #CCCC52;
-}
-#overlay #dialog-star .ok-dialog:hover {
-  background-color: #dddd41;
-}
 
 
 /* Se for necessario define-se mais estilos de movimento exemplo slideright etc --> .js */
@@ -305,3 +275,17 @@
 /* Faz o movimento no .js */
 .caption .boxcaption {
 }
+
+/* tabela para gerir participacoes */
+.table {
+   border-color: black;
+}
+.table tbody tr td{
+   border-color: black;
+}
+.table thead tr {
+   background-color: grey;
+}
+
+
+

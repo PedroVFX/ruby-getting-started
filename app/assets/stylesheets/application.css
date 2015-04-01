@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  *= require menu
+ *= require modal
  *= require welcome
  *= require projectos
  *= require background

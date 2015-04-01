@@ -1,0 +1,111 @@
+/* COLUNA 2 da MODAL parte do texto. Faz a partilha do espaco com .boxgrid que tem 50% */
+#pa1_modal_body-desc {
+  position: relative;
+  float: right;
+  width: 40%;
+}
+/* DUAS COLUNAS para a MODAL */
+#pa1_modal_body-cols {
+  position: absolute;
+  margin-top:10%;
+  height: 90%;
+  width: 100%;
+  border: 1px solid white;
+}
+#pa1_modal_txt {
+  margin-left: 10px;
+  position: relative;
+  float: left;
+  width: 40%;
+  height: 90%;
+  border: 1px solid white;
+}
+#pa1_modal_img {
+  margin-left: 20px;
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 90%;
+  border: 1px solid white;
+}
+#pa3_modal_txt {
+  position: relative;
+  float: right;
+  width: 40%;
+  height: 60%;
+  border: 1px solid white;
+}
+.letra_pequena {
+  font-size: 0.55em;
+}
+#pa3_modal_img {
+  position: relative;
+  float: left;
+  width: 70%;
+  height: 60%;
+}
+#pa3_modal_play {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 10%;
+}
+/* DUAS COLUNAS para a MODAL */
+#pa3_modal_body-cols {
+  margin-left: 10px;
+  position: absolute;
+  height: 100%;
+  width: 95%;
+}
+/* Cabecalho da modal */
+.modal{
+}
+/* Modal overlay styling */
+#overlay {
+}
+/* Modal  500 x 500 */
+#overlay .dialog {
+  background-color: #777;
+  border: 0px solid white;
+}
+#overlay .dialog .body-dialog {
+  float: left;
+  line-height: 100px;
+  width: 90%;
+
+}
+#overlay .dialog .body-dialog p {
+  display: inline-block;
+  text-align: center;
+  font: 11px roboto;
+  color: #EEE;
+  vertical-align: middle;
+}
+#overlay .dialog .body-dialog p span {
+  font-weight: 700;
+}
+/* Butao "X" da modal */
+#overlay .dialog .ok-dialog {
+  float: right;
+  height: 40px;
+  width: 40px;
+  background-color: #333;
+  text-align: center;
+  vertical-align: top;
+}
+#overlay .dialog .ok-dialog [class^="icon-"] {
+  line-height: 100px;
+  font-size: 30px;
+  color: #EEE;
+}
+#overlay .dialog .ok-dialog:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+#overlay #dialog-star .ok-dialog {
+  background-color: #CCCC52;
+}
+#overlay #dialog-star .ok-dialog:hover {
+  background-color: #dddd41;
+}
