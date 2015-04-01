@@ -1,0 +1,73 @@
+<%= form_for @participacao, :html => { :class => "form-horizontal participacao" } do |f| %>
+
+    <% if @participacao.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@participacao.errors.count, "error") %> prohibited this participacao from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @participacao.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :dialog, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :dialog, :class => 'form-control' %>
+    </div>
+    <%= error_span(@participacao[:dialog]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :titulo, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :titulo, :class => 'form-control' %>
+    </div>
+    <%= error_span(@participacao[:titulo]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :imagem, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :imagem, :class => 'form-control' %>
+    </div>
+    <%= error_span(@participacao[:imagem]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :texto, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :texto, :class => 'form-control' %>
+    </div>
+    <%= error_span(@participacao[:texto]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :soundcloud_item, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :soundcloud_item, :class => 'form-control' %>
+    </div>
+    <%= error_span(@participacao[:soundcloud_item]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :url_code_share, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :url_code_share, :class => 'form-control' %>
+    </div>
+    <%= error_span(@participacao[:url_code_share]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :nota, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :nota, :class => 'form-control' %>
+    </div>
+    <%= error_span(@participacao[:nota]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            participacaos_path, :class => 'btn btn-default' %>
+
+<% end %>

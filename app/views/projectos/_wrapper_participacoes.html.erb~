@@ -1,0 +1,20 @@
+<% @participacaos.each do |p| %>
+  <div>
+       <!-- TRUQUE: pa3_f1_modal nao tem css, div usada no pa3_overlay para chamar a Modal por coffee click   -->
+       <div id="<%= p.dialog %>" class="dialog-open">
+	        <!-- css foto_area3_1 com cursor=pointer (hand) -->
+		<div id="foto_area3_1" class="foto_area3">
+		  <img id="body-img" src="<%= p.imagem %>" title="<%= p.titulo %>">
+                </div>
+       </div>
+  </div>
+<% end %>
+           	</div>
+                <div id="br_linha"></div>
+	   	<div id="pa3_linha2">
+
+		    <div id="pa3_f3_modal" class="dialog-open">
+			<div id="foto_area3_7" class="foto_area3">
+			  <img id="body-img" src="https://codecademy-content.s3.amazonaws.com/courses/web-beginner-en-3pc6w/images/avatar.jpg" title="Afonso Pais">
+                        </div>
+		    </div>
